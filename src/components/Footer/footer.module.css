@@ -1,0 +1,86 @@
+.footer {
+    padding: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer .title {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    padding-left: 1rem;
+}
+
+.footer .title h1 {
+    font-size: 3rem;
+    line-height: .8;
+}
+
+.footer .title h1 span {
+    font-size: 1.65rem;
+}
+
+.footer .navLinks {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .navLinks a {
+    font-weight: 900;
+    color: #000;
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    text-decoration: none;
+}
+
+.footer .details {
+    padding: 1rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.footer .details span {
+    line-height: 1.2rem;
+}
+
+.footer .details a {
+    color: #000;
+    text-decoration: none;
+}
+
+@media(width<=600px) {
+    .footer {
+        padding: .5rem;
+    }
+
+    .footer .title {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .footer .title h1 {
+        font-size: 2rem;
+    }
+
+    .footer .title h1 span {
+        font-size: 1.1rem;
+    }
+
+    .footer .navLinks {
+        flex-wrap: wrap;
+    }
+
+    .footer .navLinks a {
+        font-size: 1rem;
+        padding: .8rem
+    }
+
+    .footer .details {
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+}
