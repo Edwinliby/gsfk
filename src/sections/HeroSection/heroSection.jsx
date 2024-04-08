@@ -1,5 +1,5 @@
 import styles from './hero.module.css'
-import BG from '../../assets/bg.webm'
+import BG from '../../assets/background.webm'
 import Title from '../../assets/Title.webp'
 
 export default function heroSection() {

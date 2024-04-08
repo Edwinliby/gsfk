@@ -1,6 +1,6 @@
 import styles from './collab.module.css'
 
-import BG from '../../assets/bg~1.webm'
+import BG from '../../assets/background.webm'
 
 export default function CollabSection() {
     return (
