@@ -103,7 +103,13 @@
         border-radius: 1.5rem;
     }
 
-    .heroSection .location .date{
+    .heroSection .location .date {
         justify-content: center;
+    }
+}
+
+@media(width<550px) {
+    .heroSection .heroTitle {
+        width: 20rem;
     }
 }

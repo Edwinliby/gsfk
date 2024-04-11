@@ -1,0 +1,52 @@
+.loader {
+    position: relative;
+
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.loader_logo {
+    position: absolute;
+    width: 10rem;
+}
+
+.loader_spon {
+    position: relative;
+    right: .5rem;
+    height: 1.2rem;
+    opacity: 0;
+}
+
+.logo_container {
+    display: flex;
+    position: relative;
+    top: 1rem;
+    opacity: 0;
+}
+
+.sci-mal,
+.expo-eng {
+    height: 4rem;
+}
+
+@media(width<=600px) {
+    .loader_spon {
+        top: -1rem;
+    }
+
+    .sci-mal,
+    .expo-eng {
+        height: 3.2rem;
+    }
+
+    .logo_container {
+        top: 0;
+    }
+}

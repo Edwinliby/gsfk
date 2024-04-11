@@ -70,6 +70,11 @@
     }
 }
 
+@media(width<=400px) {
+    .previous .dino {
+        width: 20rem;
+    }
+}
 
 .aimSection {
     position: relative;
@@ -106,5 +111,12 @@
     .aimSection {
         padding: 2rem;
         margin: 2rem 1rem;
+    }
+}
+
+@media(width<520px) {
+    .aimSection .dot {
+        right: -.5rem;
+        width: 10rem;
     }
 }

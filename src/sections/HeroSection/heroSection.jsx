@@ -1,17 +1,17 @@
 import styles from './hero.module.css'
-import BG from '../../assets/background.webm'
+import BG from '../../assets/BGVideo.webm'
 import Title from '../../assets/Title.webp'
 
 export default function heroSection() {
     return (
         <main className={styles.heroSection}>
-            <video autoplay loop className={styles.heroVideo}>
+            <video autoPlay muted loop className={styles.heroVideo}>
                 <source
                     src={BG}
                     type="video/webm"
                 />
             </video>
-            <div className={styles.heroBlur}></div>
+            {/* <div className={styles.heroBlur}></div> */}
 
             <div className={styles.content}>
                 <img className={styles.heroTitle} src={Title} alt="" />

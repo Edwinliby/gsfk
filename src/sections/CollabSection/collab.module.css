@@ -21,6 +21,7 @@
     height: 15rem;
     position: absolute;
     object-fit: cover;
+    object-position: bottom;
     z-index: -5;
     rotate: 180deg;
 }
