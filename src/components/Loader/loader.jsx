@@ -23,21 +23,20 @@ export default function Loader() {
 
         tl.to(logo.current, {
             duration: 1,
-            top: '28%',
             scale: .8,
             ease: 'power2.inOut',
             delay: 1
         })
 
-        tl.to(sponser.current, {
-            duration: 1,
-            opacity: 1,
-            ease: 'power2.inOut',
-        })
-
         tl.to(container.current, {
             duration: 1,
             opacity: 1,
+        })
+
+        tl.to(sponser.current, {
+            duration: 1.5,
+            opacity: 1,
+            ease: 'power2.inOut',
         })
 
         tl.to(loader.current, {
@@ -47,15 +46,15 @@ export default function Loader() {
     })
 
     return (
-        <>
-            <div ref={loader} className='loader'>
+        <div className='loader'>
+            <div ref={loader} className='load-center'>
                 <img ref={logo} src={loader_logo} alt="expo-logo" className='loader_logo' />
-                <img ref={sponser} src={loader_spon} alt="" className='loader_spon' />
                 <div ref={container} className='logo_container'>
                     <img src={science} alt="" className='sci-mal' />
                     <img src={expo} alt="" className='expo-eng' />
                 </div>
-            </div >
-        </>
+                <img ref={sponser} src={loader_spon} alt="" className='loader_spon' />
+            </div>
+        </div >
     )
 }

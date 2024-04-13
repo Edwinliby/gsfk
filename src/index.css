@@ -75,10 +75,12 @@ body {
 
   scroll-behavior: smooth;
   scroll-padding-top: 10rem;
+
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-thumb {

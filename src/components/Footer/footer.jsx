@@ -21,7 +21,7 @@ export default function Footer() {
                 <div className={styles.links}>
                     <a href="/">Home</a>
                     <a href="#about">About</a>
-                    <a href="/">Team</a>
+                    <a href="/team">Team</a>
                     <a href="#join">Join Us</a>
                 </div>
                 <div className={styles.social}>

@@ -54,7 +54,7 @@ export default function Navbar() {
                         <a href="#join" onClick={closeMobileMenu}>
                             Join Us
                         </a>
-                        <a href="/" onClick={closeMobileMenu}>
+                        <a href="/team" onClick={closeMobileMenu}>
                             Team
                         </a>
                         <a href="/" onClick={closeMobileMenu}>

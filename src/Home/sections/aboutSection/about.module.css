@@ -1,5 +1,4 @@
 .aboutSection {
-    min-height: 100vh;
     max-height: fit-content;
     padding: 1rem;
 
@@ -12,6 +11,7 @@
 }
 
 .aboutSection .tag {
+    padding: 12rem 0;
     position: relative;
     text-align: center;
 }
@@ -27,7 +27,7 @@
 
 .aboutSection .tag .boat {
     position: absolute;
-    bottom: -5rem;
+    bottom: 7rem;
     right: 0;
     width: 12rem;
 }
@@ -35,6 +35,13 @@
 .aboutSection img {
     object-fit: contain;
     z-index: -1;
+}
+
+.aboutSection .vr {
+    position: absolute;
+    top: 10rem;
+    left: 22rem;
+    width: 12rem;
 }
 
 .aboutSection .img1 {
@@ -66,8 +73,23 @@
 }
 
 @media(width<=1024px) {
+    .aboutSection .tag {
+        padding: 15rem 0;
+    }
+
     .aboutSection .tagline {
         font-size: 3.5rem;
+    }
+
+    .aboutSection .vr {
+        top: 10rem;
+        left: 10rem;
+        width: 10rem;
+    }
+
+    .aboutSection .tag .boat {
+        width: 10rem;
+        bottom: 9rem;
     }
 
     .aboutSection .img1 {
@@ -93,13 +115,9 @@
 }
 
 @media(width<=768px) {
-    .aboutSection {
-        min-height: 80vh;
-    }
-
     .aboutSection .tag .boat {
-        bottom: -3rem;
-        width: 6rem;
+        bottom: 10rem;
+        width: 7rem;
     }
 
     .aboutSection .tagline {
@@ -131,7 +149,12 @@
 
 @media(width<=600px) {
     .aboutSection .tagline {
-        font-size: 1.8rem;
+        font-size: 2rem;
+    }
+
+    .aboutSection .vr {
+        left: 3rem;
+        width: 8rem;
     }
 
     .aboutSection .img1 {
@@ -152,6 +175,33 @@
     .aboutSection .img4 {
         top: -3rem;
         right: 1rem;
-        width: 12rem;
+        width: 14rem;
+    }
+}
+
+@media(width<=378px) {
+    .aboutSection .tagline {
+        font-size: 1.8rem;
+    }
+
+    .aboutSection .vr {
+        left: 1rem;
+        width: 6rem;
+    }
+
+    .aboutSection .tag .boat {
+        bottom: 11rem;
+        width: 6rem;
+    }
+
+    .aboutSection .img3 {
+        left: 1rem;
+        width: 5rem;
+    }
+
+    .aboutSection .img4 {
+        top: -2rem;
+        right: 1rem;
+        width: 8rem;
     }
 }

@@ -54,7 +54,7 @@
 }
 
 .navbar .links .logoo {
-    width: 12rem;
+    width: 9rem;
 }
 
 .navbar .links .linkBlocks {
@@ -80,10 +80,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navbar.scrolled .logoo {
-    width: 10rem;
-}
-
 .navbar.scrolled .linkBlocks {
     background-color: transparent;
 }
@@ -105,6 +101,7 @@
         flex-direction: row-reverse;
         background-color: #fff;
         height: 6.5rem;
+        padding: 1rem;
     }
 
     .navbar.scrolled {
@@ -115,6 +112,11 @@
     .navbar .logo {
         display: block;
         width: 8rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar.scrolled .logo {
+        width: 7rem;
     }
 
     .links {
@@ -123,7 +125,6 @@
         position: absolute;
         left: 0;
         right: 0;
-        padding: 1rem 1rem 0rem;
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
         background-color: rgba(255, 255, 255);
@@ -144,8 +145,6 @@
     .links.open .linkBlocks {
         color: #000;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
         background: none;
     }
 
@@ -155,5 +154,31 @@
         padding: .8rem;
         text-align: center;
         color: #000000;
+    }
+}
+
+@media (width<=376px) {
+    .navbar {
+        height: 5rem;
+    }
+
+    .navbar.scrolled {
+        height: 4.5rem;
+    }
+
+    .navbar .logo {
+        width: 7rem;
+    }
+
+    .navbar.scrolled .logo {
+        width: 6rem;
+    }
+
+    .links {
+        top: -1.5rem;
+    }
+
+    .links.open {
+        top: 4rem;
     }
 }

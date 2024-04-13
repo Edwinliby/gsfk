@@ -1,6 +1,6 @@
 import styles from './hero.module.css'
-import BG from '../../assets/BGVideo.webm'
-import Title from '../../assets/Title.webp'
+import BG from '../../../assets/BGVideo.webm'
+import Title from '../../../assets/Title.webp'
 
 export default function heroSection() {
     return (
@@ -11,7 +11,7 @@ export default function heroSection() {
                     type="video/webm"
                 />
             </video>
-            {/* <div className={styles.heroBlur}></div> */}
+            <div className={styles.heroBlur}></div>
 
             <div className={styles.content}>
                 <img className={styles.heroTitle} src={Title} alt="" />
