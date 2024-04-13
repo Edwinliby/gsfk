@@ -4,6 +4,7 @@ import DescSection from './sections/DescSection/descSection'
 import CollabSection from './sections/CollabSection/collabSection'
 import Loader from '../components/Loader/loader'
 import Footer from '../components/Footer/footer'
+import Navbar from '../components/Navbar/navbar'
 
 import { useEffect, useState } from 'react'
 
@@ -21,6 +22,7 @@ function App() {
         <div>
             {loading ? <Loader /> : (
                 <div>
+                    <Navbar />
                     <HeroSection />
                     <AboutSection />
                     <DescSection />
