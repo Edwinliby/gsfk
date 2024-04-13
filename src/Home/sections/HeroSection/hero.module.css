@@ -4,7 +4,6 @@
 
     display: flex;
     align-items: center;
-    background-color: #000;
 }
 
 .heroVideo {
@@ -14,6 +13,7 @@
     position: absolute;
     z-index: -5;
     rotate: 180deg;
+    background-color: #000;
 }
 
 .heroBlur {
