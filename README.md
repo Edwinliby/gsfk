@@ -12,12 +12,14 @@ The Science Expo at Kozhikode Beach is an annual event that showcases the marvel
 
 We're proud to collaborate with the following partners who have contributed to making this event possible:
 
-<img src="https://sek-omega.vercel.app/assets/s1-VmN-NaBp.webp" alt="Partner 1" width="200">
-<img src="https://sek-omega.vercel.app/assets/s2-DfgrlMI1.webp" alt="Partner 2" width="200">
-<img src="https://sek-omega.vercel.app/assets/s3-Ds7t7Faz.webp" alt="Partner 3" width="200">
-<img src="https://sek-omega.vercel.app/assets/s4-7kHF-PJe.webp" alt="Partner 4" width="200">
-<img src="https://sek-omega.vercel.app/assets/s5-Dqr_TOdp.webp" alt="Partner 5" width="200">
-<img src="https://sek-omega.vercel.app/assets/s6-CKZs8COb.webp" alt="Partner 6" width="200">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; background:"red" ">
+    <img src="https://sek-omega.vercel.app/assets/s1-VmN-NaBp.webp" alt="Partner 1" width="150">
+    <img src="https://sek-omega.vercel.app/assets/s2-DfgrlMI1.webp" alt="Partner 2" width="150">
+    <img src="https://sek-omega.vercel.app/assets/s3-Ds7t7Faz.webp" alt="Partner 3" width="150">
+    <img src="https://sek-omega.vercel.app/assets/s4-7kHF-PJe.webp" alt="Partner 4" width="150">
+    <img src="https://sek-omega.vercel.app/assets/s5-Dqr_TOdp.webp" alt="Partner 5" width="150">
+    <img src="https://sek-omega.vercel.app/assets/s6-CKZs8COb.webp" alt="Partner 6" width="150">
+</div>
 
 ## Previous Event
 
@@ -31,7 +33,7 @@ Want to be a part of this year's Science Expo? Stay tuned for updates on how you
 
 Have questions or suggestions? Feel free to reach out to us:
 
-- Email: [info@scienceexpokozhikode.com](mailto:info@scienceexpokozhikode.com)
+- Email: [hello@gsfk.org](mailto:hello@gsfk.org)
 - Twitter: [@ScienceExpoKozhikode](https://twitter.com/ScienceExpoKozhikode)
 - Facebook: [Science Expo Kozhikode](https://www.facebook.com/ScienceExpoKozhikode)
 
