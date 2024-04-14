@@ -1,8 +1,8 @@
+![Science Expo Logo](https://sek-omega.vercel.app/assets/Logo-C6qGPc6_.webp)
+
 # Science Expo at Kozhikode Beach
 
 Welcome to the official repository for the Science Expo held at Kozhikode Beach! This event brings together enthusiasts, educators, and innovators to celebrate science and its wonders.
-
-![Science Expo Logo](https://sek-omega.vercel.app/assets/Logo-C6qGPc6_.webp)
 
 ## About the Expo
 
@@ -12,12 +12,12 @@ The Science Expo at Kozhikode Beach is an annual event that showcases the marvel
 
 We're proud to collaborate with the following partners who have contributed to making this event possible:
 
-![Partner 1](https://sek-omega.vercel.app/assets/s1-VmN-NaBp.webp)
-![Partner 2](https://sek-omega.vercel.app/assets/s2-DfgrlMI1.webp)
-![Partner 3](https://sek-omega.vercel.app/assets/s3-Ds7t7Faz.webp)
-![Partner 4](https://sek-omega.vercel.app/assets/s4-7kHF-PJe.webp)
-![Partner 5](https://sek-omega.vercel.app/assets/s5-Dqr_TOdp.webp)
-![Partner 6](https://sek-omega.vercel.app/assets/s6-CKZs8COb.webp)
+<img src="https://sek-omega.vercel.app/assets/s1-VmN-NaBp.webp" alt="Partner 1" width="200">
+<img src="https://sek-omega.vercel.app/assets/s2-DfgrlMI1.webp" alt="Partner 2" width="200">
+<img src="https://sek-omega.vercel.app/assets/s3-Ds7t7Faz.webp" alt="Partner 3" width="200">
+<img src="https://sek-omega.vercel.app/assets/s4-7kHF-PJe.webp" alt="Partner 4" width="200">
+<img src="https://sek-omega.vercel.app/assets/s5-Dqr_TOdp.webp" alt="Partner 5" width="200">
+<img src="https://sek-omega.vercel.app/assets/s6-CKZs8COb.webp" alt="Partner 6" width="200">
 
 ## Previous Event
 
