@@ -30,7 +30,7 @@ export default function Navbar() {
     return (
         <nav className={styles.nav}>
 
-            <div className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
+            <div className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''} ${isMobileMenuOpen ? styles.open : ''}`}>
 
                 <div className={`${styles.menuIcon} ${isMobileMenuOpen ? styles.open : ''}`} onClick={handleMobileMenuToggle}>
                     <div className={styles.bar} />

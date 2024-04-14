@@ -56,7 +56,7 @@
 }
 
 .collabSection .partners {
-    padding: 3rem 4rem;
+    padding: 1rem 4rem;
 }
 
 .collabSection .partners h2 {
@@ -95,7 +95,7 @@
     }
 
     .collabSection .partners {
-        padding: 2rem;
+        padding: 1rem 1rem 2rem;
     }
 
     .collabSection .partners h2 {
@@ -118,10 +118,6 @@
         padding: 1rem;
         padding-top: 0;
         font-size: 0.8rem;
-    }
-
-    .collabSection .partners {
-        padding: 3rem 1rem;
     }
 
     .collabSection .partners h2 {
