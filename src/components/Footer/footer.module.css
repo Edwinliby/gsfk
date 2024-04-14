@@ -52,7 +52,7 @@
     text-decoration: none;
 }
 
-@media(width<=600px) {
+@media(width<=768px) {
     .footer {
         padding: .5rem;
     }
@@ -82,6 +82,29 @@
     .footer .details {
         gap: 2rem;
         flex-wrap: wrap;
+    }
+}
+
+@media(width<=500px) {
+    .footer .title {
+        gap: 1rem;
+    }
+
+    .footer .title h1 span {
+        font-size: 1rem;
+    }
+
+    .footer .navLinks {
+        gap: 1rem;
+    }
+
+    .footer .navLinks a {
+        font-size: .9rem;
+        padding: .5rem;
+    }
+
+    .footer .details {
+        gap: 2rem;
     }
 }
 

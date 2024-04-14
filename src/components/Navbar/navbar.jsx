@@ -48,7 +48,7 @@ export default function Navbar() {
                     </a>
 
                     <div className={styles.linkBlocks}>
-                        <a href="#about" onClick={closeMobileMenu}>
+                        <a href={window.location.pathname === '/team' ? '/#about' : '#about'} onClick={closeMobileMenu}>
                             About
                         </a>
                         <a href="#join" onClick={closeMobileMenu}>

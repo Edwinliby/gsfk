@@ -2,6 +2,7 @@ import styles from './team.module.css'
 import Navbar from '../components/Navbar/navbar'
 import Footer from '../components/Footer/footer'
 import BG from '../assets/BGVideo.webm'
+import CollabSection from '../Home/sections/CollabSection/collabSection'
 
 const members = [
     {
@@ -67,6 +68,7 @@ export default function Team() {
                     ))}
                 </div>
             </div>
+            <CollabSection />
             <Footer />
         </>
     )
