@@ -22,7 +22,7 @@ export default function Footer() {
                     <a href="/">Home</a>
                     <a href="#about">About</a>
                     <a href="/team">Team</a>
-                    <a href="#join">Join Us</a>
+                    <a href="#join">Partners</a>
                 </div>
                 <div className={styles.social}>
                     <a href="/"><FaFacebook size={25} /></a>
@@ -48,7 +48,7 @@ export default function Footer() {
                 </span>
             </div>
 
-            <p style={{ fontSize: ".8rem", paddingLeft: "1rem" }}>GSFK Copyright ©️2024 </p>
+            <p style={{ fontSize: ".8rem", paddingLeft: "1rem" }}>Amuseum Copyright ©️2024 </p>
 
         </footer>
     )

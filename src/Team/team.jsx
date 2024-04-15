@@ -42,7 +42,7 @@ export default function Team() {
         <>
             <Navbar />
             <div className={styles.teamSection} >
-                <video autoPlay muted loop className={styles.video}>
+                <video autoPlay muted loop playsInline className={styles.video}>
                     <source
                         src={BG}
                         type="video/webm"
@@ -56,6 +56,20 @@ export default function Team() {
                         team of creatives
                     </h1>
                     <b>SEK 2024</b>
+                </div>
+
+                <div className={styles.teamDesc}>
+                    <h1>AMUSEUM</h1>
+                    <p>
+                        Amuseum ArtScience is a registered non-profit trust comprising independent
+                        intellectuals, artists, scientists, and cultural enthusiasts. Its objective
+                        is to create a knowledge pool by merging art and science to build an
+                        ever-growing cultural archive of creativity. The organization conducts activities
+                        that provide space, opportunities, and support to Art and Science Projects.
+                        Amuseum collaborates with voluntary agencies, national and international
+                        non-governmental organizations, and the government to enhance the interaction
+                        of artistic and scientific activities with the public.
+                    </p>
                 </div>
 
                 <div className={styles.members}>

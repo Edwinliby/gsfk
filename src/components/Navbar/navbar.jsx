@@ -52,13 +52,13 @@ export default function Navbar() {
                             About
                         </a>
                         <a href="#join" onClick={closeMobileMenu}>
-                            Join Us
+                            Partners
                         </a>
                         <a href="/team" onClick={closeMobileMenu}>
                             Team
                         </a>
                         <a href="/" onClick={closeMobileMenu}>
-                            Ticketing
+                            Buy Ticket
                         </a>
                     </div>
                 </div>

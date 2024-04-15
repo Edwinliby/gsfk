@@ -9,6 +9,7 @@ import moon from '../../../assets/moon.webm'
 import vr from '../../../assets/vr.webp'
 import aboutTitle from '../../../assets/about-title.webp'
 import events from '../../../assets/about.webp'
+import { FiExternalLink } from "react-icons/fi";
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -143,7 +144,7 @@ export default function AboutSection() {
                 <img ref={m4} className={styles.img1} src={dotLeft} alt="ref-img" />
                 <img ref={m5} className={styles.img2} src={dotRight} alt="ref-img" />
                 <img ref={m2} className={styles.img3} src={art} alt="ref-img" />
-                <video ref={mooon} autoPlay muted loop className={styles.img4} src={earth}></video>
+                <video ref={mooon} autoPlay muted loop playsInline className={styles.img4} src={earth}></video>
             </div>
 
             <div className={styles.currentEvent}>
@@ -201,7 +202,7 @@ export default function AboutSection() {
                 </p>
                 <div className={styles.whyExpoQA}>
                     <div className={styles.starContainer}>
-                        <video className={styles.star} autoPlay muted loop src={moon}></video>
+                        <video className={styles.star} autoPlay muted playsInline loop src={moon}></video>
                         <h4>The Moon</h4>
                     </div>
 
@@ -245,8 +246,8 @@ export default function AboutSection() {
                             <h1>
                                 How?
                             </h1>
-                            <p>
-                                Bookings Open Now at <a href="https://amuseum.org.in/" target='_blank'>www.amuseum.org.in</a>
+                            <p style={{ display: "flex", alignItems: "center", gap: ".5rem" }}>
+                                Click here to book your tickets <FiExternalLink />
                             </p>
                         </span>
                     </div>

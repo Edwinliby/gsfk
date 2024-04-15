@@ -5,7 +5,7 @@ import Title from '../../../assets/Title.webp'
 export default function heroSection() {
     return (
         <main className={styles.heroSection}>
-            <video autoPlay muted loop className={styles.heroVideo}>
+            <video autoPlay muted loop playsInline className={styles.heroVideo}>
                 <source
                     src={BG}
                     type="video/webm"
@@ -14,7 +14,10 @@ export default function heroSection() {
             <div className={styles.heroBlur}></div>
 
             <div className={styles.content}>
-                <img className={styles.heroTitle} src={Title} alt="" />
+                <span className={styles.titleClick}>
+                    <img className={styles.heroTitle} src={Title} alt="" />
+                    <button onClick="">Buy Ticket</button>
+                </span>
 
                 <div className={styles.location}>
                     <div className={styles.date}>

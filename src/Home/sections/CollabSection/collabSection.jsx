@@ -20,7 +20,7 @@ const partners = [
 export default function CollabSection() {
     return (
         <div className={styles.collabSection} id='join'>
-            <video autoPlay muted loop className={styles.video}>
+            <video autoPlay muted loop playsInline className={styles.video}>
                 <source
                     src={BG}
                     type="video/webm"
