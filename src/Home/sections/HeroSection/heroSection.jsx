@@ -20,7 +20,7 @@ export default function heroSection() {
                     <div className={styles.date}>
                         <p>10<span className={styles.TH}>TH</span></p>
                         <b style={{ fontSize: "1rem" }}>to</b>
-                        <p>16<span className={styles.TH}>TH</span></p>
+                        <p>26<span className={styles.TH}>TH</span></p>
                         may 2024
                     </div>
                     <p>Kozhikode Beach</p>

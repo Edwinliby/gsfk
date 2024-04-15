@@ -30,7 +30,7 @@
 .collabSection .Blur {
     width: 100%;
     height: 15rem;
-    background-image: linear-gradient(to right, rgba(0, 0, 0), rgba(27, 113, 194, 0.3));
+    background-image: linear-gradient(to right, rgb(28, 76, 130, .8), rgb(44, 104, 168, .3));
     position: absolute;
     backdrop-filter: blur(10px);
     z-index: -1;
@@ -56,17 +56,16 @@
 }
 
 .collabSection .partners {
-    padding: 1rem 4rem;
+    padding: 0rem 4rem 1rem;
 }
 
-.collabSection .partners h2 {
-    font-size: 2rem;
-    letter-spacing: 1px;
+.collabSection .partners h1 {
+    font-size: 2.2rem;
     font-family: 'ClashDisplay-Semibold';
 }
 
 .collabSection .partnerLogos {
-    padding: 3rem 1rem 0rem;
+    padding: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -98,8 +97,9 @@
         padding: 1rem 1rem 2rem;
     }
 
-    .collabSection .partners h2 {
-        font-size: 1.5rem;
+    .collabSection .partners h1 {
+        font-size: 1.6rem;
+        padding-bottom: 1rem;
     }
 
     .collabSection .partnerLogos img {

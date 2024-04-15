@@ -39,7 +39,7 @@ export default function CollabSection() {
             </div>
 
             <div className={styles.partners}>
-                <h2>OUR COLLABORATORS</h2>
+                <h1>OUR COLLABORATORS</h1>
                 <div className={styles.partnerLogos}>
                     {partners.map((partner, index) => (
                         <img src={partner.img} alt={`partner${index}`} />

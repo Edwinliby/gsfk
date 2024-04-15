@@ -43,38 +43,20 @@ export default function Desc() {
                     <a href="https://gsfk.org/" target='_blank'>
                         <span>
                             Previously At <br />
-                            <h2 style={{ fontFamily: "Playfair Display", fontStyle: "italic" }}>GLOBAL SCIENCE FESTIVAL <FaLink /></h2>
+                            <h2 style={{ fontFamily: "Playfair Display", fontStyle: "italic" }}>GLOBAL SCIENCE FESTIVAL <FaLink size={25} /></h2>
                         </span>
                     </a>
                     <p>
-                        The pursuit of science has shaped our modern world and
-                        brought hope, meaning, and empowerment. The Global
-                        Science Festival of Kerala (GSFK) celebrates this quest for
-                        knowledge by bringing together individuals from diverse
-                        backgrounds to explore the beauty of science. The first
-                        edition of GSFK was conducted in Thiruvananthapuram in
-                        January 2024, and it was attended by around 1.5 lakhs of
-                        visitors. The success and public appreciation of this event
-                        have led to satellite science expos in different cities across
-                        the country.
+                        The pursuit of science has shaped our modern world and brought hope, meaning, and empowerment.
+                        The Science Expo Kozhikode celebrates this quest for knowledge by bringing together individuals
+                        from diverse backgrounds to explore the beauty of science. This is conceived as a satellite
+                        programme of the Global Science Festival of Kerala <a href="https://www.gsfk.org/" style={{ textDecoration: "none", color: "#fff" }} target='_blank'><b>(GSFK)</b> </a>
+                        conducted in Thiruvananthapuram in January 2024 by Amuseum in association with the Science and Technology
+                        Department, Govt. of Kerala and Kerala State Council for Science technology and Environment.
+                        <br /> <br />
+                        The success and public appreciation of this event have led to satellite science expos in different cities across the country.
                     </p>
                 </div>
-            </div>
-
-            <div className={styles.aimSection}>
-                <img className={styles.dot} src={dotLeft} alt="" />
-                <h1>AIM</h1>
-                <ul>
-                    <li>
-                        Foster the  community as a knowledge society, promote scientific reasoning and propagate science's philosophy, methodology and objectivity.
-                    </li>
-                    <li>
-                        Create a platform for scientists, scholars and the public to interact with each other and recontextualize science as a way of life.
-                    </li>
-                    <li>
-                        Celebrate the fusion of science and art with an interdisciplinary approach to better science communication.
-                    </li>
-                </ul>
             </div>
 
             <div className={styles.eventContainer}>

@@ -1,8 +1,7 @@
 .previous {
     position: relative;
-    top: 2rem;
     height: fit-content;
-    padding: 1rem;
+    padding: 4rem;
 
     display: flex;
     align-items: center;
@@ -113,6 +112,10 @@
 
 
 @media(width<=1024px) {
+    .previous {
+        padding: 2rem;
+    }
+
     .previous .dino {
         width: 35rem;
     }
@@ -122,14 +125,21 @@
     }
 }
 
-@media(width<=824px) {
+@media(width<=920px) {
     .previous {
+        padding: 2rem 4rem;
         flex-direction: column-reverse;
     }
 
     .previous .box {
         width: 100%;
         right: 0;
+    }
+}
+
+@media(width<=790px) {
+    .previous {
+        padding: 2rem 1rem;
     }
 }
 
@@ -168,69 +178,6 @@
 
     .previous .box p {
         line-height: 1.5;
-        font-size: 1rem;
-    }
-}
-
-.aimSection {
-    position: relative;
-    background-color: #F4F4F4;
-    padding: 2.5rem;
-    margin: 4rem;
-    line-height: 1.5;
-    border-radius: 1rem;
-}
-
-.aimSection .dot {
-    position: absolute;
-    right: -1rem;
-    top: -1.5rem;
-    width: 13rem;
-    rotate: 90deg;
-}
-
-.aimSection h1 {
-    font-size: 3rem;
-    font-family: 'ClashDisplay-Semibold';
-}
-
-.aimSection ul {
-    padding-left: 1rem;
-}
-
-.aimSection ul li {
-    font-size: 1.1rem;
-    padding: .25rem;
-}
-
-@media(width<=1024px) {
-    .aimSection .dot {
-        right: -.5rem;
-        width: 10rem;
-    }
-
-}
-
-@media(width<=768px) {
-    .aimSection {
-        padding: 2rem;
-        margin: 2rem 1rem;
-    }
-}
-
-@media(width<520px) {
-    .aimSection .dot {
-        right: -.5rem;
-        width: 10rem;
-    }
-}
-
-@media(width<=378px) {
-    .aimSection h1 {
-        font-size: 2.5rem;
-    }
-
-    .aimSection ul li {
         font-size: 1rem;
     }
 }
