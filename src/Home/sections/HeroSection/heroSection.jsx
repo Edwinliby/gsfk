@@ -16,7 +16,7 @@ export default function heroSection() {
             <div className={styles.content}>
                 <span className={styles.titleClick}>
                     <img className={styles.heroTitle} src={Title} alt="" />
-                    <button onClick="">Buy Ticket</button>
+                    <a href='https://makemypass.com/kozhikodexpo'>Buy Ticket</a>
                 </span>
 
                 <div className={styles.location}>

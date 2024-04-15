@@ -20,16 +20,16 @@ function App() {
 
     return (
         <div>
-            {/* {loading ? <Loader /> : ( */}
-                <div>
-                    <Navbar />
-                    <HeroSection />
-                    <AboutSection />
-                    <DescSection />
-                    <CollabSection />
-                    <Footer />
-                </div>
-            {/* )} */}
+            {loading ? <Loader /> : (
+            <div>
+                <Navbar />
+                <HeroSection />
+                <AboutSection />
+                <DescSection />
+                <CollabSection />
+                <Footer />
+            </div>
+             )} 
         </div>
     )
 }

@@ -91,10 +91,35 @@
     background-color: transparent;
 }
 
+.menuBuy {
+    display: none;
+}
+
+.navbar .buy {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out
+}
+
+.navbar .buy:hover {
+    scale: 1.1;
+}
+
 @media (width<=768px) {
     .menuIcon {
         display: block;
         margin-right: 1rem;
+    }
+
+    .menuBuy {
+        display: block;
+    }
+
+    .navbar .buy {
+        display: none;
     }
 
     .navbar {
@@ -198,5 +223,83 @@
 
     .links.open {
         top: 4rem;
+    }
+}
+
+
+
+
+.form {
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0, .75);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form.hidden {
+    display: none;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #fff;
+    box-shadow: 0 0 2px 0 #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.form form span {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.form form span input {
+    padding: .8rem;
+    border-radius: .35rem;
+    border: none;
+}
+
+.form form .radio {
+    flex-direction: row;
+}
+
+.form form .radio label {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.form form .radio input {
+    width: 1.5em;
+    height: 1.5rem;
+}
+
+.form form button {
+    padding: .8rem;
+    border-radius: .35rem;
+    font-size: 1rem;
+}
+
+@media(width<=500px) {
+    .formHead h1 {
+        font-size: 1.8rem;
+        padding-bottom: .35rem;
+    }
+
+    .formHead p {
+        font-size: .85rem;
     }
 }

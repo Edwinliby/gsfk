@@ -246,9 +246,9 @@ export default function AboutSection() {
                             <h1>
                                 How?
                             </h1>
-                            <p style={{ display: "flex", alignItems: "center", gap: ".5rem" }}>
-                                Click here to book your tickets <FiExternalLink />
-                            </p>
+                            <a href='https://makemypass.com/kozhikodexpo' style={{ display: "flex", alignItems: "center", gap: ".5rem", textDecoration: "none" }}>
+                                <b>Click here to book your tickets <FiExternalLink /></b>
+                            </a>
                         </span>
                     </div>
                 </div>

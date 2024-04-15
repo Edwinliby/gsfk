@@ -26,6 +26,8 @@
 }
 
 .heroSection .content {
+    position: relative;
+    top: 3rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -39,11 +41,14 @@
     gap: 1rem;
 }
 
-.heroSection .content .titleClick button {
+.heroSection .content .titleClick a {
+    text-decoration: none;
+    color: black;
     width: fit-content;
     padding: .5rem 1rem;
     border-radius: .35rem;
     font-weight: 600;
+    background-color: rgb(255, 255, 255);
     border: none;
     font-size: 1.5rem;
 }
