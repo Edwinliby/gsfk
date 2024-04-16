@@ -27,19 +27,19 @@ function App() {
 
     return (
         <div>
-            {/* {loading ? <Loader /> : ( */}
-            <div>
-                <Bait handleFormClick={handleFormClick} />
-                <Navbar handleFormClick={handleFormClick} />
-                <HeroSection handleFormClick={handleFormClick} />
-                <AboutSection handleFormClick={handleFormClick} />
-                <DescSection />
-                <CollabSection />
-                <Footer />
+            {loading ? <Loader /> : (
+                <div>
+                    <Bait handleFormClick={handleFormClick} />
+                    <Navbar handleFormClick={handleFormClick} />
+                    <HeroSection handleFormClick={handleFormClick} />
+                    <AboutSection handleFormClick={handleFormClick} />
+                    <DescSection />
+                    <CollabSection />
+                    <Footer />
 
-                {setPopup ? <Form handleFormClick={handleFormClick} /> : null}
-            </div>
-            {/* )} */}
+                    {setPopup ? <Form handleFormClick={handleFormClick} /> : null}
+                </div>
+            )}
         </div>
     )
 }
