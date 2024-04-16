@@ -68,6 +68,22 @@
     width: 100%;
 }
 
+.form .power {
+    font-size: .85rem;
+    font-weight: bold;
+    color: #7a7a7a;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .45rem;
+}
+
+.form .power img {
+    width: 1.8rem;
+    height: 100%;
+}
+
 @media(width<=500px) {
     .formHead h1 {
         font-size: 1.8rem;

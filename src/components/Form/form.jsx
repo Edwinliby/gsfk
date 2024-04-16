@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import styles from './form.module.css';
+import makemypass from '../../assets/makemypass.webp'
 
 export default function Form({ handleFormClick }) {
     const formRef = useRef(null);
@@ -47,6 +48,12 @@ export default function Form({ handleFormClick }) {
                                 <label htmlFor="above-18"> <input type="radio" name="age" value="above-18" />Above 18</label>
                             </span>
                             <button type="submit"><b>Submit</b></button>
+
+                            <a className={styles.power} href="https://makemypass.com/home" target='_blank'>
+                                powered by
+                                <img src={makemypass} alt="makemypass-logo" />
+                                MakeMyPass
+                            </a>
                         </form>
                     </div>
                 </div>
