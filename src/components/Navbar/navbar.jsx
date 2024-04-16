@@ -55,7 +55,7 @@ export default function Navbar({ handleFormClick }) {
                             Team
                         </a>
                         <p className={styles.menuBuy} onClick={handleFormClick}>
-                            Buy Ticket
+                            <b>Buy Ticket</b>
                         </p>
                     </div>
 

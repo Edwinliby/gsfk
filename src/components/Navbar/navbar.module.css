@@ -163,6 +163,7 @@
     .links {
         flex-direction: column;
         position: absolute;
+        top: -5rem;
         left: 0;
         right: 0;
         border-bottom-left-radius: 1rem;
@@ -225,6 +226,3 @@
         top: 4rem;
     }
 }
-
-
-
