@@ -2,26 +2,20 @@
     position: relative;
     height: fit-content;
     padding: 4rem;
+    height: 100vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.previous .dino {
-    position: relative;
-    left: 3rem;
-    width: 40rem;
-    object-fit: contain;
-    z-index: 1;
+    background-image: url("../../../assets/moonWatching.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .previous .box {
-    position: relative;
-    right: 2rem;
+    position: absolute;
+    bottom: 4rem;
+    right: 4rem;
     border-radius: 1rem;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 2.5rem;
     color: #fff;
     display: flex;
@@ -33,6 +27,14 @@
 .previous .box a {
     text-decoration: none;
     color: #fff;
+    display: flex;
+    gap: .8rem;
+    flex-direction: column;
+}
+
+.previous .box .gsfkLogo {
+    width: 8rem;
+    object-fit: contain;
 }
 
 .previous .box span {
@@ -54,16 +56,12 @@
 
 .eventContainer {
     padding: 1rem;
-    padding-top: 1.5rem;
+    padding-top: 4rem;
     padding-bottom: 4rem;
     border-radius: 12px;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-}
-
-.eventContainer:hover .event {
-    animation-play-state: paused;
 }
 
 .check {
@@ -116,10 +114,6 @@
         padding: 2rem;
     }
 
-    .previous .dino {
-        width: 35rem;
-    }
-
     .previous .box {
         padding: 2rem;
     }
@@ -128,18 +122,20 @@
 @media(width<=920px) {
     .previous {
         padding: 2rem 4rem;
-        flex-direction: column-reverse;
-    }
-
-    .previous .box {
-        width: 100%;
-        right: 0;
     }
 }
 
 @media(width<=790px) {
     .previous {
         padding: 2rem 1rem;
+    }
+
+    .previous .box {
+        position: absolute;
+        bottom: 2rem;
+        right: 0rem;
+        width: 100%;
+        border-radius: 0;
     }
 }
 
@@ -153,12 +149,8 @@
     }
 
     .previous .box {
-        padding: 2rem 1.5rem;
-    }
-
-    .previous .dino {
-        width: 23rem;
-        left: 0;
+        padding: 1.5rem;
+        bottom: 0;
     }
 
     .eventContainer {
@@ -172,10 +164,6 @@
 }
 
 @media(width<400px) {
-    .previous .dino {
-        width: 20rem;
-    }
-
     .previous .box p {
         line-height: 1.5;
         font-size: 1rem;

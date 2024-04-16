@@ -34,7 +34,7 @@ export default function Footer() {
             <div className={styles.details}>
                 <span>
                     <b>Office</b> <br />
-                    Althara nagar, Vellayamalam <br />
+                    Althara nagar, Vellayambalam <br />
                     Thiruvananthapuram, 695010
                 </span>
                 <span>

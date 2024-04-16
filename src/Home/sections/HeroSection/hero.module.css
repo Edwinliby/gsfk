@@ -41,7 +41,7 @@
     gap: 1rem;
 }
 
-.heroSection .content .titleClick a {
+.heroSection .content .titleClick button {
     text-decoration: none;
     color: black;
     width: fit-content;

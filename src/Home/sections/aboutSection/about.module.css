@@ -105,7 +105,7 @@
 }
 
 .whyExpo {
-    padding: 1rem 4rem 2rem;
+    padding: 1rem 4rem 0rem;
     font-size: 1.3rem;
     line-height: 1.4;
 }
@@ -154,6 +154,15 @@
     padding: .5rem .8rem;
     border: .1px solid rgb(190, 190, 190);
     border-radius: 1rem;
+}
+
+.whyExpo button {
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    background-color: #fff;
+    border: none;
+    font-size: 1.2rem;
 }
 
 .whyExpo .star {
@@ -321,7 +330,7 @@
     }
 
     .whyExpo {
-        padding: 1rem;
+        padding: 1rem 1rem 0rem;
     }
 
     .starContainer h4 {
@@ -365,7 +374,6 @@
     }
 }
 
-
 /* Aim section */
 
 .aimSection {
@@ -373,8 +381,9 @@
     background-color: #F4F4F4;
     padding: 2.5rem;
     margin: 4rem;
-    line-height: 1.5;
+    line-height: 1.4;
     border-radius: 1rem;
+    font-size: 1.3rem;
 }
 
 .aimSection .dot {
@@ -390,12 +399,13 @@
     font-family: 'ClashDisplay-Semibold';
 }
 
-.aimSection ul {
+.aimSection ul,
+.aimSection ol {
     padding-left: 1rem;
 }
 
+.aimSection ol li,
 .aimSection ul li {
-    font-size: 1.2rem;
     padding: .25rem;
 }
 
@@ -404,7 +414,6 @@
         right: -.5rem;
         width: 10rem;
     }
-
 }
 
 @media(width<=768px) {
@@ -413,24 +422,30 @@
         margin: 2rem 1rem;
     }
 
+    .aimSection ol li,
     .aimSection ul li {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
     }
 }
 
 @media(width<520px) {
+    .aimSection {
+        padding: 1rem;
+        margin: 2rem 1rem;
+    }
+
     .aimSection .dot {
         right: -.5rem;
         width: 10rem;
     }
-}
 
-@media(width<=378px) {
     .aimSection h1 {
         font-size: 2.5rem;
     }
+}
 
-    .aimSection ul li {
+@media(width<=378px) {
+    .aimSection ol li .aimSection ul li {
         font-size: 1rem;
     }
 }

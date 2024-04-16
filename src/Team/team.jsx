@@ -55,7 +55,6 @@ export default function Team() {
                         Meet our <span>extraordinary</span> <br />
                         team of creatives
                     </h1>
-                    <b>SEK 2024</b>
                 </div>
 
                 <div className={styles.teamDesc}>

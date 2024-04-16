@@ -1,8 +1,13 @@
+import { useState } from 'react'
 import styles from './hero.module.css'
 import BG from '../../../assets/BGVideo.webm'
 import Title from '../../../assets/Title.webp'
+import Form from '../../../components/Form/form'
 
 export default function heroSection() {
+
+    const [setPopup, setSetPopup] = useState(false);
+
     return (
         <main className={styles.heroSection}>
             <video autoPlay muted loop playsInline className={styles.heroVideo}>
@@ -16,8 +21,10 @@ export default function heroSection() {
             <div className={styles.content}>
                 <span className={styles.titleClick}>
                     <img className={styles.heroTitle} src={Title} alt="" />
-                    <a href='https://makemypass.com/kozhikodexpo'>Buy Ticket</a>
+                    <button onClick={() => { setSetPopup(prevState => !prevState) }}>Buy Ticket</button>
                 </span>
+
+                {setPopup ? <Form /> : null}
 
                 <div className={styles.location}>
                     <div className={styles.date}>

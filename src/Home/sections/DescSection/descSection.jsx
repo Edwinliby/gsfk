@@ -1,49 +1,17 @@
 import styles from './desc.module.css'
-import dino from '../../../assets/Dino.webp'
-import dotLeft from '../../../assets/dotLeft.webp'
+import gsfkLogo from '../../../assets/gsfkLogo.webp'
 import { FaLink } from "react-icons/fa";
 
-import { useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(useGSAP);
-gsap.registerPlugin(ScrollTrigger);
-
 export default function Desc() {
-
-    const start = useRef(null)
-    const din = useRef(null)
-
-    useGSAP(() => {
-        const tl = gsap.timeline()
-
-        tl.fromTo(din.current, {
-            opacity: 0,
-        }, {
-            duration: 1,
-            opacity: 1,
-            ease: 'sine.inOut',
-            scrollTrigger: {
-                trigger: start.current,
-                start: 'top 50%',
-                end: 'bottom 50%',
-                scrub: 1,
-            }
-        })
-    })
-
     return (
         <>
-            <div ref={start}></div>
             <div className={styles.previous}>
-                <img ref={din} className={styles.dino} src={dino} alt="" />
                 <div className={styles.box}>
                     <a href="https://gsfk.org/" target='_blank'>
+                        <img className={styles.gsfkLogo} src={gsfkLogo} alt="gsfk-Logo" />
                         <span>
                             Previously At <br />
-                            <h2 style={{ fontFamily: "Playfair Display", fontStyle: "italic" }}>GLOBAL SCIENCE FESTIVAL <FaLink size={25} /></h2>
+                            <h2 style={{ fontFamily: "Playfair Display", fontStyle: "italic" }}>GLOBAL SCIENCE FESTIVAL </h2>
                         </span>
                     </a>
                     <p>

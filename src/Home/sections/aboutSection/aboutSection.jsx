@@ -1,4 +1,5 @@
 import styles from './about.module.css'
+import { useState } from 'react'
 
 import dotLeft from '../../../assets/dotLeft.webp'
 import dotRight from '../../../assets/dotRight.webp'
@@ -10,6 +11,7 @@ import vr from '../../../assets/vr.webp'
 import aboutTitle from '../../../assets/about-title.webp'
 import events from '../../../assets/about.webp'
 import { FiExternalLink } from "react-icons/fi";
+import Form from '../../../components/Form/form'
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -20,6 +22,8 @@ gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 export default function AboutSection() {
+
+    const [setPopup, setSetPopup] = useState(false);
 
     const tag = useRef(null)
     const tag2 = useRef(null)
@@ -127,7 +131,7 @@ export default function AboutSection() {
 
     return (
         <>
-            <div className={styles.aboutSection} id='about'>
+            <div className={styles.aboutSection}>
                 <div ref={tag2} ></div>
                 <div className={styles.tag}>
                     <p className={styles.tagline}>
@@ -135,7 +139,7 @@ export default function AboutSection() {
                         <div ref={tag} ></div>
                         BEAUTY OF HUMAN <br />
                         CREATIVITY AT OUR <br />
-                        <span>SCIENCE FESTIVAL</span>
+                        <span>SCIENCE EXPO</span>
                     </p>
                     <img ref={m3} className={styles.boat} src={boat} alt="ref-img" />
                 </div>
@@ -147,13 +151,13 @@ export default function AboutSection() {
                 <video ref={mooon} autoPlay muted loop playsInline className={styles.img4} src={earth}></video>
             </div>
 
-            <div className={styles.currentEvent}>
+            <div className={styles.currentEvent} id='about'>
                 <div className={styles.currentEventContent}>
                     <img className={styles.aboutEvent} src={aboutTitle} alt="about-event" />
                     <p>
                         The Science Expo at Kozhikode Beach from <b>May 10th to 26th - 2024</b>, will explore a curated
                         exhibition focussing on ‘Life Sciences’, industrial pavilions showcasing science and technology,
-                        everyday science activities, cultural programs, food festivals and street installations. The Science Expo
+                        everyday science activities, cultural programs, food festivals, pet shows and street installations. The Science Expo
                         at Kozhikode will welcome students and the public and expects a footfall of over 2 lakh people over 17 days.
                         <br /><br />
                         Science Expo Kozhikode is organised by <b>Amuseum ArtScience</b>, Thiruvananthapuram in collaboration
@@ -246,12 +250,61 @@ export default function AboutSection() {
                             <h1>
                                 How?
                             </h1>
-                            <a href='https://makemypass.com/kozhikodexpo' style={{ display: "flex", alignItems: "center", gap: ".5rem", textDecoration: "none" }}>
+                            <button onClick={() => { setSetPopup(prevState => !prevState) }} style={{ display: "flex", alignItems: "center", gap: ".5rem", textDecoration: "none" }}>
                                 <b>Click here to book your tickets <FiExternalLink /></b>
-                            </a>
+                            </button>
                         </span>
                     </div>
                 </div>
+                {setPopup ? <Form /> : null}
+            </div>
+
+            <div className={styles.aimSection}>
+                <span className={styles.whyExpoTitle}>
+                    <h1>Curated Science Exhibition</h1>
+                    <b>A walk through space and time</b>
+                </span>
+                <img className={styles.dot} src={dotLeft} alt="" />
+                <p style={{ padding: "1rem 0rem" }}>
+                    The curated science exhibition allows visitors to learn about the complexities
+                    of human existence through artistically designed exhibits. The Science Expo at
+                    Kozhikode narrates the story of Life, focusing on Human evolution in 6 chapters.
+                </p>
+                <ol>
+                    <li>
+                        Cell—narrates the formation of the Complex cell, its functions, and its development into diverse life forms on Earth.
+                    </li>
+                    <li>
+                        Evolution explains Charles Darwin's journey and findings in formulating the theory of Evolution by Natural selection. This chapter depicts life-size replicas of the evidence for the Evolutionary theory.
+                    </li>
+                    <li>
+                        Hominid Time Travel- an artificially designed visual narration of the story of the Hominid evolution beginning from 36 lakh years up to the spread of the Homo Sapiens around the globe.
+                    </li>
+                    <li>
+                        Human- Reveals the anatomy and physiology of the Human species through original exhibits and Audio visual presentations.
+                    </li>
+                    <li>
+                        Brain—This chapter showcases exhibits explaining the role of the Human Brain in enabling our species to master and control many things in nature.
+                    </li>
+                    <li>
+                        Science- Demonstrating the Philosophy of Science.
+                    </li>
+                </ol>
+
+                {/* <span className={styles.quotes}>
+                    walk ins . simulated experiences . multimedia installations . augmented realities . virtual realities . life size replicas
+                </span> */}
+                <p style={{ paddingTop: "1rem" }}>
+                    Everyday Science The Expo provides the participation of Citizen Science activities conducted outside the academic institutions.
+                    <br /><br />
+                    <b>Street / Beach Installations A city-wide awareness of the sciences will be promoted by the placement of evocative street / Beach installations.</b>
+                    <br /><br />
+                    <b>Book Fair Books on subjects like science, art, and the humanities will be displayed by prominent publishers.</b>
+                    <br /><br />
+                    Industrial Pavilions Prominent scientific and technological organizations are invited to present the advances made in their fields and to promote their products and services.
+                </p>
+
+                <h1 style={{ color: "#2C68A8", paddingTop: "1rem", fontFamily: "Playfair Display", fontStyle: "italic" }}>Cultural Performances and Food Festival!</h1>
             </div>
         </>
     )
