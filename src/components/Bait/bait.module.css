@@ -1,0 +1,22 @@
+.bait {
+    position: fixed;
+    bottom: 4rem;
+    right: -5rem;
+    z-index: 999;
+
+    background-image: url('../../assets/Bait.webp');
+    background-size: cover;
+    background-position: center;
+    height: 5rem;
+    width: 5rem;
+
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .bait.scrolled {
+        display: block;
+        right: 0;
+    }
+}

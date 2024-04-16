@@ -1,13 +1,9 @@
-import { useState } from 'react'
 import Countdown from 'react-countdown';
 import styles from './hero.module.css'
 import BG from '../../../assets/BGVideo.webm'
 import Title from '../../../assets/Title.webp'
-import Form from '../../../components/Form/form'
 
-export default function heroSection() {
-
-    const [setPopup, setSetPopup] = useState(false);
+export default function heroSection({ handleFormClick }) {
 
     const renderer = ({ days, hours, minutes, seconds }) => {
         return (
@@ -21,7 +17,7 @@ export default function heroSection() {
     };
 
     return (
-        <main className={styles.heroSection}>
+        <main className={styles.heroSection} id="home">
             <video autoPlay muted loop playsInline className={styles.heroVideo}>
                 <source
                     src={BG}
@@ -33,16 +29,12 @@ export default function heroSection() {
             <div className={styles.content}>
                 <span className={styles.titleClick}>
                     <img className={styles.heroTitle} src={Title} alt="" />
-                    <button onClick={() => { setSetPopup(prevState => !prevState) }}>Buy Ticket</button>
+                    <button onClick={handleFormClick}>Buy Ticket</button>
                 </span>
-
-                {setPopup ? <Form /> : null}
-
-
                 <div className={styles.date_time}>
                     <div className={styles.location}>
                         <Countdown
-                            date={Date.now() + 2.0131e+9}
+                            date={new Date("2024-05-10T00:00:00")}
                             renderer={renderer}
                         />
                     </div>

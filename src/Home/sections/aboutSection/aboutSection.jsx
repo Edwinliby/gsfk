@@ -6,13 +6,9 @@ import moon from '../../../assets/moon.webm'
 import aboutTitle from '../../../assets/about-title.webp'
 import events from '../../../assets/about.webp'
 import { FiExternalLink } from "react-icons/fi";
-import Form from '../../../components/Form/form'
 import Intro from './components/intro'
 
-export default function AboutSection() {
-
-    const [setPopup, setSetPopup] = useState(false);
-
+export default function Navbar({ handleFormClick }) {
     return (
         <>
             <Intro />
@@ -116,14 +112,13 @@ export default function AboutSection() {
                             <h1>
                                 How?
                             </h1>
-                            <button onClick={() => { setSetPopup(prevState => !prevState) }} style={{ display: "flex", alignItems: "center", gap: ".5rem", textDecoration: "none" }}>
+                            <button onClick={handleFormClick} style={{ display: "flex", alignItems: "center", gap: ".5rem", textDecoration: "none" }}>
                                 <b>Click here to book your tickets <FiExternalLink /></b>
                             </button>
                         </span>
                     </div>
                 </div>
-                {setPopup ? <Form /> : null}
-            </div>
+            </div >
 
             <div className={styles.aimSection}>
                 <span className={styles.whyExpoTitle}>

@@ -1,11 +1,9 @@
-import React, { useRef, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './navbar.module.css';
 import logo from '../../assets/Logo.webp';
-import Form from '../Form/form';
 
-export default function Navbar() {
+export default function Navbar({ handleFormClick }) {
 
-    const [setPopup, setSetPopup] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -37,12 +35,12 @@ export default function Navbar() {
                     <div className={styles.bar} />
                 </div>
 
-                <a href="/">
+                <a href="#home">
                     <img className={styles.logo} src={logo} alt='gsfk-logo' />
                 </a>
 
                 <div className={`${styles.links} ${isMobileMenuOpen ? styles.open : ''}`}>
-                    <a href="/">
+                    <a href="#home">
                         <img className={styles.logoo} src={logo} alt='gsfk-logo' />
                     </a>
 
@@ -56,17 +54,16 @@ export default function Navbar() {
                         <a href="/team" >
                             Team
                         </a>
-                        <a href="/" className={styles.menuBuy} onClick={() => { setSetPopup(prevState => !prevState) }}>
+                        <p className={styles.menuBuy} onClick={handleFormClick}>
                             Buy Ticket
-                        </a>
+                        </p>
                     </div>
 
-                    <a href="/" className={styles.buy} onClick={() => { setSetPopup(prevState => !prevState) }}>
+                    <p className={styles.buy} onClick={handleFormClick}>
                         <b>Buy Ticket</b>
-                    </a>
+                    </p>
                 </div>
             </div>
-            {setPopup ? <Form /> : null}
         </nav >
     );
 }
