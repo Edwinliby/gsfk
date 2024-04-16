@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Countdown from 'react-countdown';
 import styles from './hero.module.css'
 import BG from '../../../assets/BGVideo.webm'
 import Title from '../../../assets/Title.webp'
@@ -7,6 +8,17 @@ import Form from '../../../components/Form/form'
 export default function heroSection() {
 
     const [setPopup, setSetPopup] = useState(false);
+
+    const renderer = ({ days, hours, minutes, seconds }) => {
+        return (
+            <div className={styles.counter}>
+                <div><span>{days}</span> Days</div>:
+                <div><span>{hours}</span> Hrs</div>:
+                <div><span>{minutes}</span>min</div>:
+                <div><span>{seconds}</span> sec</div>
+            </div>
+        )
+    };
 
     return (
         <main className={styles.heroSection}>
@@ -26,14 +38,23 @@ export default function heroSection() {
 
                 {setPopup ? <Form /> : null}
 
-                <div className={styles.location}>
-                    <div className={styles.date}>
-                        <p>10<span className={styles.TH}>TH</span></p>
-                        <b style={{ fontSize: "1rem" }}>to</b>
-                        <p>26<span className={styles.TH}>TH</span></p>
-                        may 2024
+
+                <div className={styles.date_time}>
+                    <div className={styles.location}>
+                        <Countdown
+                            date={Date.now() + 2.0131e+9}
+                            renderer={renderer}
+                        />
                     </div>
-                    <p>Kozhikode Beach</p>
+                    <div className={styles.location}>
+                        <div className={styles.date}>
+                            <p>10<span className={styles.TH}>TH</span></p>
+                            <b style={{ fontSize: "1rem" }}>to</b>
+                            <p>26<span className={styles.TH}>TH</span></p>
+                            may 2024
+                        </div>
+                        <p>Kozhikode Beach</p>
+                    </div>
                 </div>
             </div>
         </main>

@@ -20,7 +20,7 @@ function App() {
 
     return (
         <div>
-            {loading ? <Loader /> : (
+            {/* {loading ? <Loader /> : ( */}
                 <div>
                     <Navbar />
                     <HeroSection />
@@ -29,7 +29,7 @@ function App() {
                     <CollabSection />
                     <Footer />
                 </div>
-            )}
+            {/* )} */}
         </div>
     )
 }

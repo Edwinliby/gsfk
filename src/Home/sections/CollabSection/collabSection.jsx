@@ -34,12 +34,12 @@ export default function CollabSection() {
                     <span>CELEBRATE</span>
                 </h1>
                 <p>
-                    GSFK is a curated, one-of-a-kind experience open to collaboration, Partnerships and voluntering
+                    SEK is a curated, one-of-a-kind experience open to collaboration, Partnerships and volunteering
                 </p>
             </div>
 
             <div className={styles.partners}>
-                <h1>OUR COLLABORATORS</h1>
+                <h1>OUR PARTNERS</h1>
                 <div className={styles.partnerLogos}>
                     {partners.map((partner, index) => (
                         <img src={partner.img} alt={`partner${index}`} />
