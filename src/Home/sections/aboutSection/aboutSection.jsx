@@ -112,9 +112,12 @@ export default function Navbar({ handleFormClick }) {
                             <h1>
                                 How?
                             </h1>
-                            <button onClick={handleFormClick} style={{ display: "flex", alignItems: "center", gap: ".5rem", textDecoration: "none" }}>
+                            <a
+                                href='https://makemypass.com/kozhikodexpo'
+                                // onClick={handleFormClick}
+                                style={{ display: "flex", alignItems: "center", gap: ".5rem", textDecoration: "none", color: "#000" }}>
                                 <b>Click here to book your tickets <FiExternalLink /></b>
-                            </button>
+                            </a>
                         </span>
                     </div>
                 </div>

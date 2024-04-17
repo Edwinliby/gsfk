@@ -19,11 +19,12 @@ export default function bait({ handleFormClick }) {
     }, []);
 
     return (
-        <p
+        <a href="https://makemypass.com/kozhikodexpo"
             className={`
         ${styles.bait} 
         ${isScrolled ? styles.scrolled : ''}`}
-            onClick={handleFormClick}>
-        </p>
+        // onClick={handleFormClick}
+        >
+        </a>
     )
 }

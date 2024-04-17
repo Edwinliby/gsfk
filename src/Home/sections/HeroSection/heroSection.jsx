@@ -29,7 +29,8 @@ export default function heroSection({ handleFormClick }) {
             <div className={styles.content}>
                 <span className={styles.titleClick}>
                     <img className={styles.heroTitle} src={Title} alt="" />
-                    <button onClick={handleFormClick}>Buy Ticket</button>
+                    {/* <button onClick={handleFormClick}>Buy Ticket</button> */}
+                    <a href="https://makemypass.com/kozhikodexpo">Buy Ticket</a>
                 </span>
                 <div className={styles.date_time}>
                     <div className={styles.location}>
