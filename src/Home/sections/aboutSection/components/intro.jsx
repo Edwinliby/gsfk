@@ -5,6 +5,7 @@ import art from '../../../../assets/image 5.webp'
 import boat from '../../../../assets/image 7.webp'
 import earth from '../../../../assets/earth.webm'
 import vr from '../../../../assets/vr.webp'
+import sciexpo from '../../../../assets/sci-expo.webp' 
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -128,7 +129,7 @@ export default function Intro() {
                     <div ref={tag} ></div>
                     BEAUTY OF HUMAN <br />
                     CREATIVITY AT OUR <br />
-                    <span>SCIENCE EXPO</span>
+                    <img className={styles.sciexpo} src={sciexpo} alt="science-expo" />
                 </p>
                 <img ref={m3} className={styles.boat} src={boat} alt="ref-img" />
             </div>

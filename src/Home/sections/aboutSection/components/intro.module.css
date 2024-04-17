@@ -20,9 +20,10 @@
     font-size: 4.5rem;
 }
 
-.aboutSection .tagline span {
-    font-family: "Playfair Display", serif;
-    font-style: italic;
+.aboutSection .tagline .sciexpo {
+    width: 100%;
+    height: 5.5rem;
+    object-fit: contain;
 }
 
 .aboutSection .tag .boat {
@@ -81,6 +82,10 @@
         font-size: 3.5rem;
     }
 
+    .aboutSection .tagline .sciexpo {
+        height: 4.5rem;
+    }
+
     .aboutSection .vr {
         top: 10rem;
         left: 10rem;
@@ -124,6 +129,10 @@
         font-size: 2.2rem;
     }
 
+    .aboutSection .tagline .sciexpo {
+        height: 3rem;
+    }
+
     .aboutSection .img1 {
         top: -1.5rem;
         left: -1.5rem;
@@ -150,6 +159,10 @@
 @media(width<=600px) {
     .aboutSection .tagline {
         font-size: 2rem;
+    }
+
+    .aboutSection .tagline .sciexpo {
+        height: 2.8rem;
     }
 
     .aboutSection .vr {
@@ -183,6 +196,10 @@
         font-size: 1.8rem;
     }
 
+    .aboutSection .tagline .sciexpo {
+        height: 2.4rem;
+    }
+
     .aboutSection .vr {
         left: 1rem;
         width: 6rem;
@@ -200,7 +217,7 @@
 
     .aboutSection .img4 {
         top: -2rem;
-        right: 1rem;
-        width: 8rem;
+        right: -3rem;
+        width: 22rem;
     }
 }
