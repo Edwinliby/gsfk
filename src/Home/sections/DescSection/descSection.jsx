@@ -18,7 +18,7 @@ export default function Desc() {
                         The pursuit of science has shaped our modern world and brought hope, meaning, and empowerment.
                         The Science Expo Kozhikode celebrates this quest for knowledge by bringing together individuals
                         from diverse backgrounds to explore the beauty of science. This is conceived as a satellite
-                        programme of the Global Science Festival of Kerala <a href="https://www.gsfk.org/" style={{ textDecoration: "none", color: "#fff" }} target='_blank'><b>(GSFK)</b> </a>
+                        programme of the Global Science Festival of Kerala <b style={{ display: "inline-block" }}> <a href=""> (GSFK) &nbsp;</a></b>
                         conducted in Thiruvananthapuram in January 2024 by Amuseum in association with the Science and Technology
                         Department, Govt. of Kerala and Kerala State Council for Science technology and Environment.
                         <br /> <br />
