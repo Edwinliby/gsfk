@@ -3,6 +3,7 @@
     height: fit-content;
     padding: 4rem;
     height: 100vh;
+    overflow: hidden;
 
     background-image: url("../../../assets/moonWatching.webp");
     background-size: cover;
@@ -163,9 +164,9 @@
 
 }
 
-@media(width<400px) {
+@media(width<450px) {
     .previous .box {
-        bottom: 1rem;
+        /* bottom: 1rem; */
     }
 
     .previous .box p {
