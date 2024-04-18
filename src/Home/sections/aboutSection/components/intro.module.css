@@ -17,12 +17,34 @@
 }
 
 .aboutSection .tagline {
-    font-size: 4.5rem;
+    height: 22rem;
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutSection .tagline .e {
+    padding-left: 12rem;
+}
+
+.aboutSection .tagline .ee {
+    padding-right: 12rem;
+}
+
+.aboutSection .tagline .eee {
+    padding-left: 15rem;
+}
+
+.aboutSection .tagline .art {
+    background-image: linear-gradient(to right, rgb(0, 189, 236), rgba(0, 132, 255));
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .aboutSection .tagline .sciexpo {
     width: 100%;
-    height: 5.5rem;
+    height: 18rem;
+    z-index: 9000;
     object-fit: contain;
 }
 
@@ -35,6 +57,10 @@
 
 .aboutSection img {
     object-fit: contain;
+    z-index: -1;
+}
+
+.aboutSection video {
     z-index: -1;
 }
 
@@ -69,8 +95,20 @@
 .aboutSection .img4 {
     position: absolute;
     top: -5rem;
-    right: 5rem;
+    right: 0rem;
     width: 40rem;
+}
+
+@media(width<=1290px) {
+    .aboutSection .tagline .sciexpo {
+        height: 15rem;
+    }
+
+    .aboutSection .img4 {
+        top: -3rem;
+        right: -3rem;
+        width: 34rem;
+    }
 }
 
 @media(width<=1024px) {
@@ -83,7 +121,7 @@
     }
 
     .aboutSection .tagline .sciexpo {
-        height: 4.5rem;
+        /* height: 4.5rem; */
     }
 
     .aboutSection .vr {
@@ -127,10 +165,11 @@
 
     .aboutSection .tagline {
         font-size: 2.2rem;
+        height: 15rem;
     }
 
     .aboutSection .tagline .sciexpo {
-        height: 3rem;
+        height: 13rem;
     }
 
     .aboutSection .img1 {
@@ -158,11 +197,12 @@
 
 @media(width<=600px) {
     .aboutSection .tagline {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        height: 10rem;
     }
 
     .aboutSection .tagline .sciexpo {
-        height: 2.8rem;
+        height: 10rem;
     }
 
     .aboutSection .vr {
@@ -193,11 +233,12 @@
 
 @media(width<=378px) {
     .aboutSection .tagline {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
+        height: 10rem;
     }
 
     .aboutSection .tagline .sciexpo {
-        height: 2.4rem;
+        height: 10rem;
     }
 
     .aboutSection .vr {

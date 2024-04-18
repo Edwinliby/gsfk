@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './navbar.module.css';
 import logo from '../../assets/Logo.webp';
+import whiteLogo from '../../assets/white-logo.webp'
 
 export default function Navbar({ handleFormClick }) {
 
@@ -35,12 +36,19 @@ export default function Navbar({ handleFormClick }) {
                     <div className={styles.bar} />
                 </div>
 
-                <a href="#home">
-                    <img className={styles.logo} src={logo} alt='gsfk-logo' />
+                <a href="#home" className={styles.blueLogo}>
+                    <img className={styles.logo} src={logo} alt='sek-logo' />
+                </a>
+
+                <a href="#home" className={styles.whiteLogo}>
+                    <img className={styles.logo} src={whiteLogo} alt='sek-logo' />
                 </a>
 
                 <div className={`${styles.links} ${isMobileMenuOpen ? styles.open : ''}`}>
-                    <a href="#home">
+                    <a href="#home" className={styles.whiteLogo}>
+                        <img className={styles.logoo} src={whiteLogo} alt='gsfk-logo' />
+                    </a>
+                    <a href="#home" className={styles.blueLogo}>
                         <img className={styles.logoo} src={logo} alt='gsfk-logo' />
                     </a>
 

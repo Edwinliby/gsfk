@@ -22,6 +22,8 @@ export default function Navbar({ handleFormClick }) {
                         everyday science activities, cultural programs, food festivals, pet shows and street installations. The Science Expo
                         at Kozhikode will welcome students and the public and expects a footfall of over 2 lakh people over 17 days.
                         <br /><br />
+                    </p>
+                    <p style={{ textAlign: "left" }}>
                         Science Expo Kozhikode is organised by <b>Amuseum ArtScience</b>, Thiruvananthapuram in collaboration
                         with public and private institutions and Science organisations.
                     </p>

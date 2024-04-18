@@ -27,7 +27,7 @@ function App() {
 
     return (
         <div>
-            {loading ? <Loader /> : (
+            {/* {loading ? <Loader /> : ( */}
                 <div>
                     <Bait handleFormClick={handleFormClick} />
                     <Navbar handleFormClick={handleFormClick} />
@@ -39,7 +39,7 @@ function App() {
 
                     {setPopup ? <Form handleFormClick={handleFormClick} /> : null}
                 </div>
-            )}
+            {/* )} */}
         </div>
     )
 }

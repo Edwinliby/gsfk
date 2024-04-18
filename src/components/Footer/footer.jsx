@@ -39,7 +39,7 @@ export default function Footer() {
                 </span>
                 <span>
                     <b>E-mail</b> <br />
-                    <a href="mailto:amuseumscienceexpo@gmail.com">amuseumscienceexpo@gmail.com</a> <br />
+                    <a href="mailto:Scienceexpokozhikode@gmail.com">Scienceexpokozhikode@gmail.com</a> <br />
                     {/* <a href="mailto:partnerships@gsfk.org">partnerships@gsfk.org</a> */}
                 </span>
                 <span>

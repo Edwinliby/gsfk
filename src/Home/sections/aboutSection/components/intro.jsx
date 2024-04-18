@@ -5,7 +5,8 @@ import art from '../../../../assets/image 5.webp'
 import boat from '../../../../assets/image 7.webp'
 import earth from '../../../../assets/earth.webm'
 import vr from '../../../../assets/vr.webp'
-import sciexpo from '../../../../assets/sci-expo.webp' 
+import sciexpo from '../../../../assets/sci-expo.webp'
+import introTitle from '../../../../assets/into-title.webp' 
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -125,11 +126,15 @@ export default function Intro() {
             <div ref={tag2} ></div>
             <div className={styles.tag}>
                 <p className={styles.tagline}>
-                    DISCOVER THE <br />
+                    {/* <span className={styles.e}><b>Experience</b> <br /></span> */}
                     <div ref={tag} ></div>
-                    BEAUTY OF HUMAN <br />
-                    CREATIVITY AT OUR <br />
-                    <img className={styles.sciexpo} src={sciexpo} alt="science-expo" />
+                    {/* <span className={styles.ee}>An <b>Expanse</b> of <br /></span> */}
+                    {/* <b>Knowledge</b><br /> */}
+                    {/* <span className={styles.eee}> */}
+                        {/* Through <b className={styles.art}>ART</b> */}
+                    {/* </span> */}
+                    {/* <img className={styles.sciexpo} src={sciexpo} alt="science-expo" /> */}
+                    <img className={styles.sciexpo} src={introTitle} alt="introTitle" />
                 </p>
                 <img ref={m3} className={styles.boat} src={boat} alt="ref-img" />
             </div>

@@ -15,6 +15,10 @@
     transition: all 0.3s ease-in-out;
 }
 
+.nav img {
+    transition: all 0.3s ease-in-out;
+}
+
 /* Hamburger Icon Start*/
 .menuIcon {
     cursor: pointer;
@@ -44,10 +48,6 @@
 
 /* Hamburger Icon End*/
 
-.navbar .logo {
-    display: none;
-}
-
 .navbar .links {
     display: flex;
     align-items: center;
@@ -55,8 +55,24 @@
     width: 100%;
 }
 
-.navbar .links .logoo {
+.navbar .logo {
+    display: none;
+}
+
+.navbar .logoo {
     width: 9rem;
+}
+
+.navbar .blueLogo {
+    display: none;
+}
+
+.navbar.scrolled .whiteLogo {
+    display: none;
+}
+
+.navbar.scrolled .blueLogo {
+    display: block;
 }
 
 .navbar .links .linkBlocks {
@@ -77,6 +93,7 @@
 
 .navbar.scrolled {
     padding: 1rem;
+    transition: all 0.3s ease-in-out;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

@@ -2,7 +2,11 @@
     padding: 6rem 4rem 1rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2.5rem;
+}
+
+.currentEvent p {
+    text-align: justify;
 }
 
 .currentEventContent {
@@ -50,12 +54,16 @@
 
 .aimSection h1 {
     font-size: 3rem;
-    font-family: 'ClashDisplay-Semibold';
+}
+
+.aimSection p {
+    text-align: justify;
 }
 
 .aimSection ul,
 .aimSection ol {
     padding-left: 1rem;
+    text-align: justify;
 }
 
 .aimSection ol li,
@@ -78,6 +86,10 @@
 .whyExpo .whyExpoTitle {
     display: flex;
     flex-direction: column;
+}
+
+.whyExpo p {
+    text-align: justify;
 }
 
 .whyExpo .whyExpoQA {

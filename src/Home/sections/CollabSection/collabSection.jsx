@@ -34,7 +34,7 @@ export default function CollabSection() {
                     <span>CELEBRATE</span>
                 </h1>
                 <p>
-                    SEK is a curated, one-of-a-kind experience open to collaboration, Partnerships and volunteering
+                    Science Expo Kozhikode is a curated, one-of-a-kind experience open to collaboration, Partnerships and volunteering
                 </p>
             </div>
 
