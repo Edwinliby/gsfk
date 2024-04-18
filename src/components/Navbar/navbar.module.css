@@ -169,6 +169,14 @@
         transition: all 0.3s ease-in-out;
     }
 
+    .navbar.open .whiteLogo {
+        display: none;
+    }
+
+    .navbar.open .blueLogo {
+        display: block;
+    }
+
     .navbar.scrolled .logo {
         width: 7rem;
     }
