@@ -15,6 +15,7 @@
     flex-direction: column;
     gap: 1rem;
     color: white;
+    padding: 4rem;
 }
 
 .collabSection .video {
@@ -38,30 +39,27 @@
 
 .collabSection .title h1 {
     font-size: 3rem;
-    padding-left: 4rem;
     letter-spacing: 2px;
-}
-
-.collabSection .title p {
-    padding-left: 4rem;
-    font-size: 1.1rem;
 }
 
 .collabSection .title h1 span {
-    font-family: 'ClashDisplay-Bold';
+    font-family: 'NeueMontreal-Bold';
     letter-spacing: 2px;
     background-image: linear-gradient(to right, rgb(0, 204, 255), rgba(0, 132, 255, 0.493));
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
 .collabSection .partners {
     padding: 0rem 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .collabSection .partners h1 {
     font-size: 2.2rem;
-    font-family: 'ClashDisplay-Semibold';
 }
 
 .collabSection .partnerLogos {
@@ -79,18 +77,12 @@
 }
 
 @media(width<=500px) {
-    .collabSection .title h1 {
-        font-size: 2rem;
+    .collabSection .title {
+        padding: 1rem;
     }
 
     .collabSection .title h1 {
-        font-size: 1.8rem;
-        padding-left: 2rem;
-    }
-
-    .collabSection .title p {
-        padding-left: 2rem;
-        font-size: 1rem;
+        font-size: 1.9rem;
     }
 
     .collabSection .partners {
@@ -112,12 +104,6 @@
         font-size: 1.5rem;
         padding: 1rem;
         padding-bottom: 0;
-    }
-
-    .collabSection .title p {
-        padding: 1rem;
-        padding-top: 0;
-        font-size: 0.8rem;
     }
 
     .collabSection .partners h2 {

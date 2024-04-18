@@ -1,7 +1,8 @@
 import HeroSection from './sections/HeroSection/heroSection'
 import AboutSection from './sections/aboutSection/aboutSection'
-import DescSection from './sections/DescSection/descSection'
 import CollabSection from './sections/CollabSection/collabSection'
+import FeatureSection from './sections/Features/features'
+import DescSection from './sections/DescSection/desc'
 import Loader from '../components/Loader/loader'
 import Footer from '../components/Footer/footer'
 import Navbar from '../components/Navbar/navbar'
@@ -28,17 +29,18 @@ function App() {
     return (
         <div>
             {/* {loading ? <Loader /> : ( */}
-                <div>
-                    <Bait handleFormClick={handleFormClick} />
-                    <Navbar handleFormClick={handleFormClick} />
-                    <HeroSection handleFormClick={handleFormClick} />
-                    <AboutSection handleFormClick={handleFormClick} />
-                    <DescSection />
-                    <CollabSection />
-                    <Footer />
+            <div>
+                <Bait handleFormClick={handleFormClick} />
+                <Navbar handleFormClick={handleFormClick} />
+                <HeroSection handleFormClick={handleFormClick} />
+                <AboutSection handleFormClick={handleFormClick} />
+                <FeatureSection />
+                <DescSection />
+                <CollabSection />
+                <Footer />
 
-                    {setPopup ? <Form handleFormClick={handleFormClick} /> : null}
-                </div>
+                {setPopup ? <Form handleFormClick={handleFormClick} /> : null}
+            </div>
             {/* )} */}
         </div>
     )

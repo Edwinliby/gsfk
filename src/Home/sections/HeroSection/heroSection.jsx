@@ -3,7 +3,7 @@ import styles from './hero.module.css'
 import BG from '../../../assets/BGVideo.webm'
 import Title from '../../../assets/Title.webp'
 
-export default function heroSection({ handleFormClick }) {
+export default function heroSection() {
 
     const renderer = ({ days, hours, minutes, seconds }) => {
         return (
@@ -29,7 +29,6 @@ export default function heroSection({ handleFormClick }) {
             <div className={styles.content}>
                 <span className={styles.titleClick}>
                     <img className={styles.heroTitle} src={Title} alt="" />
-                    {/* <button onClick={handleFormClick}>Buy Ticket</button> */}
                     <a href="https://makemypass.com/kozhikodexpo">Buy Ticket</a>
                 </span>
                 <div className={styles.date_time}>
@@ -42,11 +41,11 @@ export default function heroSection({ handleFormClick }) {
                     <div className={styles.location}>
                         <div className={styles.date}>
                             <p>10<span className={styles.TH}>TH</span></p>
-                            <b style={{ fontSize: "1rem" }}>to</b>
+                            <b style={{ fontSize: "1rem", color: "#fff" }}>to</b>
                             <p>26<span className={styles.TH}>TH</span></p>
                             may 2024
                         </div>
-                        <p>Kozhikode Beach</p>
+                        <h3>Kozhikode Beach</h3>
                     </div>
                 </div>
             </div>

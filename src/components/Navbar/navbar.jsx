@@ -59,14 +59,14 @@ export default function Navbar({ handleFormClick }) {
                         <a href="#join" >
                             Partners
                         </a>
-                        {/* <a href="/team" >
+                        {/* <a href="#team" >
                             Team
                         </a> */}
                         {/* <p className={styles.menuBuy} onClick={handleFormClick}>
                             <b>Buy Ticket</b>
                         </p> */}
                         <a href="https://makemypass.com/kozhikodexpo" className={styles.menuBuy}>
-                            <b>Buy Ticket</b>
+                            Buy Ticket
                         </a>
                     </div>
 
@@ -74,7 +74,7 @@ export default function Navbar({ handleFormClick }) {
                         <b>Buy Ticket</b>
                     </p> */}
                     <a href="https://makemypass.com/kozhikodexpo" className={styles.buy}>
-                        <b>Buy Ticket</b>
+                        Buy Ticket
                     </a>
                 </div>
             </div>

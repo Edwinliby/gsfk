@@ -1,114 +1,62 @@
 .currentEvent {
-    padding: 6rem 4rem 1rem;
-    display: flex;
-    align-items: center;
-    gap: 2.5rem;
-}
-
-.currentEvent p {
-    text-align: justify;
-}
-
-.currentEventContent {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.currentEventContent .aboutEvent {
-    width: fit-content;
-    height: 10rem;
-    object-fit: contain;
-}
-
-.currentEventContent p {
-    font-size: 1.3rem;
-    line-height: 1.4;
-}
-
-.currentEvent img {
-    width: 100%;
-    height: 32rem;
-    object-fit: contain;
-}
-
-.aimSection {
     position: relative;
-    background-color: #F4F4F4;
-    padding: 2.5rem;
-    margin: 4rem;
-    line-height: 1.4;
-    border-radius: 1rem;
-    font-size: 1.3rem;
-}
-
-.aimSection .dot {
-    position: absolute;
-    right: -1rem;
-    top: -1.5rem;
-    width: 13rem;
-    rotate: 90deg;
-}
-
-.aimSection h1 {
-    font-size: 3rem;
-}
-
-.aimSection p {
-    text-align: justify;
-}
-
-.aimSection ul,
-.aimSection ol {
-    padding-left: 1rem;
-    text-align: justify;
-}
-
-.aimSection ol li,
-.aimSection ul li {
-    padding: .25rem;
-}
-
-.whyExpo {
-    padding: 1rem 4rem 0rem;
-    font-size: 1.3rem;
-    line-height: 1.4;
-}
-
-.whyExpo h1 {
-    font-size: 2.2rem;
-    line-height: 1.3;
-    padding-bottom: .8rem;
-}
-
-.whyExpo .whyExpoTitle {
+    padding: 4rem;
     display: flex;
     flex-direction: column;
 }
 
-.whyExpo p {
-    text-align: justify;
+.currentEvent .c1 {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    z-index: -1;
+    width: 30rem;
+    opacity: .9;
 }
 
-.whyExpo .whyExpoQA {
+.currentEvent ul {
+    padding-left: 3rem;
+}
+
+.currentEvent li {
+    color: #444444;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    padding: .5rem;
+}
+
+.QAList {
+    position: relative;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
-}
-
-.whyExpo .whyExpoQA .QAList {
-    display: flex;
-    flex-direction: column;
     gap: 2rem;
     padding-top: 2rem;
+}
+
+.QAList .c2 {
+    position: absolute;
+    top: -20rem;
+    left: 1rem;
+    z-index: -1;
+    opacity: .9;
+    width: 15rem;
+}
+
+.QAList .questions {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.QAList .questions a {
+    font-size: 1.3rem;
 }
 
 .starContainer {
     position: relative;
     right: 5rem;
-    float: right;
     height: 25rem;
     width: 25rem;
     display: flex;
@@ -127,53 +75,26 @@
     border-radius: 1rem;
 }
 
-.whyExpo button {
-    text-decoration: none;
-    color: black;
-    width: fit-content;
-    background-color: #fff;
-    border: none;
-    font-size: 1.2rem;
+.starContainer .star {
+    height: 40rem;
 }
 
-.whyExpo .star {
-    height: 35rem;
+@media(width<=1280px) {
+    .starContainer {
+        right: 0rem;
+    }
+
+    .starContainer .star {
+        height: 30rem;
+    }
 }
 
 @media(width<=1024px) {
-    .currentEventContent .aboutEvent {
-        height: 8rem;
-    }
-
-    .currentEventContent p {
-        font-size: 1.2rem;
-    }
-
-    .currentEvent img {
-        height: 21rem;
-    }
-
-    .aimSection .dot {
-        right: -.5rem;
-        width: 10rem;
-    }
-
-    .whyExpo .whyExpoQA {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .starContainer {
-        right: 0rem;
-        height: 25rem;
-        width: 25rem;
-    }
-
     .starContainer h4 {
         display: block;
     }
 
-    .whyExpo .star {
+    .starContainer .star {
         height: 25rem;
     }
 }
@@ -181,29 +102,20 @@
 @media(width<=768px) {
     .currentEvent {
         padding: 4rem 2rem 1rem;
+    }
+
+    .QAList {
         flex-direction: column;
         gap: 2rem;
+        padding-top: 0rem;
     }
 
-    .currentEvent img {
-        height: 100%;
-    }
-
-    .aimSection {
-        padding: 2rem;
-        margin: 2rem 1rem;
-    }
-
-    .aimSection ol li,
-    .aimSection ul li {
-        font-size: 1.15rem;
-    }
 
     .starContainer h4 {
-        left: 5rem;
+        left: 0rem;
     }
 
-    .whyExpo .star {
+    .starContainer .star {
         height: 20rem;
     }
 }
@@ -211,26 +123,6 @@
 @media(width<=600px) {
     .currentEvent {
         padding: 3rem 1rem 0rem;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .aimSection {
-        padding: 1rem;
-        margin: 2rem 1rem;
-    }
-
-    .aimSection .dot {
-        right: -.5rem;
-        width: 10rem;
-    }
-
-    .aimSection h1 {
-        font-size: 2.5rem;
-    }
-
-    .whyExpo {
-        padding: 1rem 1rem 0rem;
     }
 
     .starContainer h4 {
@@ -239,16 +131,4 @@
     }
 }
 
-@media(width<=378px) {
-    .currentEventContent .aboutEvent {
-        height: 7rem;
-    }
-
-    .currentEventContent p {
-        font-size: 1rem;
-    }
-
-    .aimSection ol li .aimSection ul li {
-        font-size: 1rem;
-    }
-}
+@media(width<=378px) {}

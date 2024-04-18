@@ -100,7 +100,6 @@
 
 .navbar.scrolled .linkBlocks a {
     color: #000;
-    font-family: 'ClashDisplay-Medium';
     font-size: 1.1rem;
 }
 
@@ -115,10 +114,16 @@
 .navbar .buy {
     background-color: #fff;
     color: #000;
+    font-weight: 600;
     text-decoration: none;
     padding: .8rem 1rem;
     border-radius: .5rem;
     transition: all .3s ease-in-out
+} 
+
+.navbar.scrolled .buy {
+    background-image: linear-gradient(to right, rgb(0, 143, 179), rgba(0, 132, 255, 0.6));
+    color: #fff;
 }
 
 .navbar .buy:hover {
@@ -194,7 +199,6 @@
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
         backdrop-filter: blur(10px);
-        background-color: rgba(255, 255, 255);
     }
 
     .links .linkBlocks a {
@@ -204,6 +208,7 @@
     .links.open {
         display: flex;
         top: 5rem;
+        background-color: rgba(255, 255, 255);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 

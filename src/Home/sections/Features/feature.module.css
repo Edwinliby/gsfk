@@ -1,0 +1,319 @@
+.feature {
+    background-image: url('../../../assets/dotBG.webp');
+    background-size: contain;
+    background-position: 30% 30%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.feature .header {
+    padding: 4rem 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature .title {
+    line-height: 1;
+}
+
+.feature .watcher {
+    width: 100%;
+    position: relative;
+    bottom: -1rem;
+    display: none;
+    padding: 0rem 1.5rem;
+}
+
+.feature .header .p2 {
+    width: 45%;
+    padding-top: 3rem;
+    text-align: left;
+}
+
+.feature .title h1 {
+    background-image: linear-gradient(to right, rgb(0, 193, 241), rgb(0, 62, 119));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.feature .title h1:first-child {
+    font-family: 'NeueMontreal-Light';
+    font-size: 4rem;
+}
+
+.feature .title h1:last-child {
+    font-family: 'NeueMontreal-Bold';
+    font-size: 4.1rem;
+}
+
+.feature .headerContent {
+    padding: 4rem;
+    background-image: linear-gradient(to right, rgb(9, 154, 190), rgb(0, 62, 119));
+    position: relative;
+}
+
+.feature .headerContent .p2 {
+    width: 50%;
+    color: #fff;
+    text-align: left;
+}
+
+.feature .headerContent img {
+    position: absolute;
+    bottom: 0;
+    right: 5rem;
+    width: 40%;
+}
+
+.feature .expo1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.feature .expo1 .c2 {
+    position: absolute;
+    object-fit: contain;
+    left: 5rem;
+    z-index: -1;
+    width: 15rem;
+}
+
+.feature .expo1 .content {
+    text-align: right;
+    width: 50%;
+    padding-right: 5rem;
+}
+
+.feature .expo1 .content p {
+    text-align: right;
+}
+
+.feature .expo1 img {
+    height: 100%;
+    width: 30rem;
+}
+
+.feature .expo2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 4rem 0rem;
+}
+
+.feature .expo2 img {
+    height: 100%;
+    width: 30rem;
+}
+
+.feature .expo2 .content {
+    text-align: left;
+    width: 50%;
+    padding-left: 5rem;
+}
+
+.feature .expo2 .content p {
+    text-align: left;
+}
+
+.feature .expo2 .content img {
+    position: absolute;
+    top: 3rem;
+    right: 18%;
+    height: 15rem;
+    width: 15rem;
+}
+
+.expo3 {
+    padding: 4rem 0;
+}
+
+.expo3 img {
+    display: none;
+}
+
+.expo3 .headerContent img {
+    display: block;
+    object-fit: contain;
+    width: 30%;
+}
+
+.great {
+    position: relative;
+    top: 5rem;
+}
+
+.great .p2 {
+    font-size: 3rem;
+}
+
+.expo3 .headerContent .greatDudes {
+    right: 0;
+    width: 50%;
+}
+
+.lastContent {
+    padding: 4rem;
+}
+
+.lastContent span {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+.lastContent span h1 {
+    background-image: linear-gradient(to right, rgb(11, 144, 177), rgb(5, 110, 207));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+}
+
+.lastContent span h1:nth-child(odd) {
+    font-family: 'NeueMontreal-Bold';
+}
+
+@media(width<=1024px) {
+    .feature .expo1 .c2 {
+        top: -5rem;
+        left: 3rem;
+        width: 12rem;
+    }
+
+    .feature .expo1 .content {
+        padding-right: 2rem;
+    }
+
+    .feature .expo1 img {
+        width: 25rem;
+    }
+
+    .feature .expo2 img {
+        height: 100%;
+        width: 22rem;
+    }
+
+    .feature .expo2 .content {
+        padding-left: 2rem;
+    }
+
+    .feature .expo2 .content img {
+        top: 0rem;
+    }
+
+    .expo3 .headerContent img {
+        width: 40%;
+    }
+}
+
+@media(width<=820px) {
+    .feature .header {
+        padding: 4rem 2rem 2rem;
+    }
+
+    .feature .headerContent {
+        padding: 2rem;
+    }
+
+    .feature .headerContent .p2 {
+        width: 100%
+    }
+
+    .feature .watcher {
+        display: block;
+    }
+
+    .feature .headerContent img {
+        display: none;
+    }
+
+    .feature .expo1 {
+        flex-direction: column;
+    }
+
+    .feature .expo1 .content,
+    .feature .expo2 .content {
+        width: 100%;
+    }
+
+    .feature .expo1 .c2,
+    .feature .expo2 .content img {
+        display: none;
+    }
+
+    .feature .expo2 {
+        flex-direction: column;
+    }
+
+    .expo3 img {
+        display: block;
+        width: 100%;
+    }
+
+    .expo3 .headerContent img {
+        display: none;
+    }
+
+    .great {
+        top: 0;
+    }
+
+    .lastContent {
+        padding: 4rem 2rem;
+    }
+}
+
+@media(width<=620px) {
+    .feature {
+        background-size: cover;
+    }
+
+    .feature .header {
+        padding: 4rem 1rem 2rem;
+    }
+
+    .feature .headerContent {
+        padding: 2rem 1rem;
+    }
+
+    .feature .title h1:first-child {
+        font-size: 2.5rem;
+    }
+
+    .feature .title h1:last-child {
+        font-size: 2.6rem;
+    }
+
+    .feature .expo1,
+    .feature .expo2 {
+        padding: 4rem 1rem;
+    }
+
+    .feature .expo1 .content {
+        padding-right: 0;
+    }
+
+    .feature .expo2 .content {
+        padding-left: 0;
+    }
+
+    .great .p2 {
+        font-size: 2rem;
+    }
+
+    .lastContent {
+        padding: 1rem;
+    }
+
+    .lastContent span h1 {
+        font-size: 2.2rem;
+    }
+}

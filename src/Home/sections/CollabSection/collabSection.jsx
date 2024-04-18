@@ -31,14 +31,22 @@ export default function CollabSection() {
             <div className={styles.title}>
                 <h1>
                     JOIN, COLLABORATE & <br />
-                    <span>CELEBRATE</span>
+                    <span>CELEBRATE SCIENCE</span>
                 </h1>
-                <p>
-                    Science Expo Kozhikode is a curated, one-of-a-kind experience open to collaboration, Partnerships and volunteering
-                </p>
             </div>
 
             <div className={styles.partners}>
+                <h1>Team <b style={{ fontFamily: 'NeueMontreal-Bold' }}>AMUSEUM</b></h1>
+                <p>
+                    Amuseum ArtScience is a registered non-profit trust comprising independent intellectuals,
+                    artists, scientists, and cultural enthusiasts. Its objective is to create a knowledge
+                    pool by merging art and science to build an ever-growing cultural archive of creativity.
+                    The organization conducts activities that provide space, opportunities, and support
+                    to Art and Science Projects. Amuseum collaborates with voluntary agencies,
+                    national and international non-governmental organizations, and the government to
+                    enhance the interaction of artistic and scientific activities with the public.
+                </p>
+                <br />
                 <h1>OUR PARTNERS</h1>
                 <div className={styles.partnerLogos}>
                     {partners.map((partner, index) => (

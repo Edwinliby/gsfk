@@ -1,64 +1,3 @@
-.previous {
-    position: relative;
-    height: fit-content;
-    padding: 4rem;
-    height: 100vh;
-    overflow: hidden;
-
-    background-image: url("../../../assets/moonWatching.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.previous .box {
-    position: absolute;
-    bottom: 4rem;
-    right: 4rem;
-    border-radius: 1rem;
-    background-color: rgba(0, 0, 0, 0.65);
-    padding: 2.5rem;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 50%;
-}
-
-.previous .box p {
-    text-align: justify;
-}
-
-.previous .box a {
-    text-decoration: none;
-    color: #fff;
-    display: flex;
-    gap: .8rem;
-    flex-direction: column;
-}
-
-.previous .box .gsfkLogo {
-    width: 8rem;
-    object-fit: contain;
-}
-
-.previous .box span {
-    font-size: 1.5rem;
-}
-
-.previous .box h2 {
-    font-weight: 400;
-    font-size: 2.5rem;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
-
-.previous .box p {
-    line-height: 1.5;
-    font-size: 1.2rem;
-}
-
 .eventContainer {
     padding: 1rem;
     padding-top: 4rem;
@@ -113,51 +52,7 @@
     rotate: -3deg;
 }
 
-
-@media(width<=1024px) {
-    .previous {
-        padding: 2rem;
-    }
-
-    .previous .box {
-        padding: 2rem;
-    }
-}
-
-@media(width<=920px) {
-    .previous {
-        padding: 2rem 4rem;
-    }
-}
-
-@media(width<=790px) {
-    .previous {
-        padding: 2rem 1rem;
-    }
-
-    .previous .box {
-        position: absolute;
-        right: 0rem;
-        width: 100%;
-        border-radius: 0;
-    }
-}
-
 @media(width<=600px) {
-    .previous .box span {
-        font-size: 1.1rem;
-    }
-
-    .previous .box h2 {
-        font-size: 2rem;
-    }
-
-    .previous .box {
-        padding: 1.5rem;
-        height: fit-content;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
     .eventContainer {
         padding-bottom: 2rem;
     }
@@ -166,25 +61,4 @@
         height: 13rem;
     }
 
-}
-
-@media(width<450px) {
-    .previous .box {
-        /* bottom: 1rem; */
-    }
-
-    .previous .box p {
-        line-height: 1.4;
-        font-size: 1rem;
-    }
-}
-
-@media(width<376px) {
-    .previous .box {
-        bottom: 0rem;
-    }
-
-    .previous .box p {
-        line-height: 1.3;
-    }
 }

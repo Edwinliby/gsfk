@@ -23,18 +23,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.aboutSection .tagline .e {
-    padding-left: 12rem;
-}
-
-.aboutSection .tagline .ee {
-    padding-right: 12rem;
-}
-
-.aboutSection .tagline .eee {
-    padding-left: 15rem;
-}
-
 .aboutSection .tagline .art {
     background-image: linear-gradient(to right, rgb(0, 189, 236), rgba(0, 132, 255));
     -webkit-background-clip: text;
@@ -48,11 +36,12 @@
     object-fit: contain;
 }
 
-.aboutSection .tag .boat {
+.aboutSection .boat {
     position: absolute;
     bottom: 7rem;
-    right: 0;
+    right: 3rem;
     width: 12rem;
+    rotate: 45deg;
 }
 
 .aboutSection img {
@@ -71,20 +60,6 @@
     width: 12rem;
 }
 
-.aboutSection .img1 {
-    position: absolute;
-    top: -2.5rem;
-    left: -2.5rem;
-    width: 18rem;
-}
-
-.aboutSection .img2 {
-    position: absolute;
-    bottom: .5rem;
-    right: .5rem;
-    width: 15rem;
-}
-
 .aboutSection .img3 {
     position: absolute;
     bottom: 3rem;
@@ -92,11 +67,11 @@
     width: 14rem;
 }
 
-.aboutSection .img4 {
+.aboutSection .earth {
     position: absolute;
-    top: -5rem;
-    right: 0rem;
-    width: 40rem;
+    top: -10rem;
+    right: -7rem;
+    width: 50rem;
 }
 
 @media(width<=1290px) {
@@ -104,7 +79,7 @@
         height: 15rem;
     }
 
-    .aboutSection .img4 {
+    .aboutSection .earth {
         top: -3rem;
         right: -3rem;
         width: 34rem;
@@ -120,29 +95,15 @@
         font-size: 3.5rem;
     }
 
-    .aboutSection .tagline .sciexpo {
-        /* height: 4.5rem; */
-    }
-
     .aboutSection .vr {
         top: 10rem;
         left: 10rem;
         width: 10rem;
     }
 
-    .aboutSection .tag .boat {
+    .aboutSection .boat {
         width: 10rem;
         bottom: 9rem;
-    }
-
-    .aboutSection .img1 {
-        top: -2rem;
-        left: -2rem;
-        width: 23rem;
-    }
-
-    .aboutSection .img2 {
-        width: 12rem;
     }
 
     .aboutSection .img3 {
@@ -150,7 +111,7 @@
         width: 12rem;
     }
 
-    .aboutSection .img4 {
+    .aboutSection .earth {
         top: -3rem;
         right: -3rem;
         width: 34rem;
@@ -158,7 +119,7 @@
 }
 
 @media(width<=768px) {
-    .aboutSection .tag .boat {
+    .aboutSection .boat {
         bottom: 10rem;
         width: 7rem;
     }
@@ -172,23 +133,13 @@
         height: 13rem;
     }
 
-    .aboutSection .img1 {
-        top: -1.5rem;
-        left: -1.5rem;
-        width: 10rem;
-    }
-
-    .aboutSection .img2 {
-        width: 10rem;
-    }
-
     .aboutSection .img3 {
         left: 2rem;
         width: 8rem;
         bottom: 5rem;
     }
 
-    .aboutSection .img4 {
+    .aboutSection .earth {
         top: -4rem;
         right: -4rem;
         width: 30rem;
@@ -210,22 +161,12 @@
         width: 8rem;
     }
 
-    .aboutSection .img1 {
-        top: -1rem;
-        left: -1rem;
-        width: 8rem;
-    }
-
-    .aboutSection .img2 {
-        width: 8rem;
-    }
-
     .aboutSection .img3 {
         left: 1rem;
         width: 6rem;
     }
 
-    .aboutSection .img4 {
+    .aboutSection .earth {
         top: -3rem;
         width: 25rem;
     }
@@ -246,7 +187,7 @@
         width: 6rem;
     }
 
-    .aboutSection .tag .boat {
+    .aboutSection .boat {
         bottom: 11rem;
         width: 6rem;
     }
@@ -256,7 +197,7 @@
         width: 5rem;
     }
 
-    .aboutSection .img4 {
+    .aboutSection .earth {
         top: -2rem;
         right: -3rem;
         width: 22rem;

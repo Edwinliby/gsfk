@@ -1,70 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 @font-face {
-  font-family: 'ClashDisplay-Extralight';
-  src: url('/fonts/ClashDisplay-Extralight.woff2') format('woff2'),
-    url('/fonts/ClashDisplay-Extralight.woff') format('woff'),
-    url('/fonts/ClashDisplay-Extralight.ttf') format('truetype');
-  font-weight: 200;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Touch-Me';
-  src: url('/fonts/Sans.otf') format('otf'),
-    url('/fonts/Sans.woff') format('woff'),
-    url('/fonts/Sans.ttf') format('truetype');
-  /* font-weight: 400; */
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay-Light';
-  src: url('/fonts/ClashDisplay-Light.woff2') format('woff2'),
-    url('/fonts/ClashDisplay-Light.woff') format('woff'),
-    url('/fonts/ClashDisplay-Light.ttf') format('truetype');
+  font-family: 'NeueMontreal-Light';
+  src: url('/fonts/NeueMontreal-Light.otf') format('opentype');
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ClashDisplay-Regular';
-  src: url('/fonts/ClashDisplay-Regular.woff2') format('woff2'),
-    url('/fonts/ClashDisplay-Regular.woff') format('woff'),
-    url('/fonts/ClashDisplay-Regular.ttf') format('truetype');
+  font-family: 'NeueMontreal-Regular';
+  src: url('/fonts/NeueMontreal-Regular.otf') format('opentype');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ClashDisplay-Medium';
-  src: url('/fonts/ClashDisplay-Medium.woff2') format('woff2'),
-    url('/fonts/ClashDisplay-Medium.woff') format('woff'),
-    url('/fonts/ClashDisplay-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay-Semibold';
-  src: url('/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
-    url('/fonts/ClashDisplay-Semibold.woff') format('woff'),
-    url('/fonts/ClashDisplay-Semibold.ttf') format('truetype');
+  font-family: 'NeueMontreal-Medium';
+  src: url('/fonts/NeueMontreal-Medium.otf') format('opentype');
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ClashDisplay-Bold';
-  src: url('/fonts/ClashDisplay-Bold.woff2') format('woff2'),
-    url('/fonts/ClashDisplay-Bold.woff') format('woff'),
-    url('/fonts/ClashDisplay-Bold.ttf') format('truetype');
+  font-family: 'NeueMontreal-Bold';
+  src: url('/fonts/NeueMontreal-Bold.otf') format('opentype');
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -80,18 +40,41 @@
 
 html,
 body {
-  /* font-family: 'ClashDisplay-Regular'; */
-  font-family: "Montserrat", sans-serif;
+  font-family: 'NeueMontreal-Regular';
   letter-spacing: .8px;
+  line-height: 1.4;
 
   scroll-behavior: smooth;
-  scroll-padding-top: 10rem;
+  scroll-padding-top: 5rem;
 
   overflow-x: hidden;
 }
 
+h1 {
+  font-size: 3rem;
+  padding-bottom: .8rem;
+}
+
 p {
-  font-family: "Montserrat", sans-serif;
+  color: #444444;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+b {
+  color: #000;
+}
+
+@media(width<600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
 }
 
 ::-webkit-scrollbar {
