@@ -21,7 +21,8 @@ export default function Footer() {
                 <div className={styles.links}>
                     <a href="/">Home</a>
                     <a href="#about">About</a>
-                    {/* <a href="/team">Team</a> */}
+                    <a href="#glance">Glance</a> 
+                    <a href="#features">Features</a> 
                     <a href="#join">Partners</a>
                 </div>
                 <div className={styles.social}>
@@ -44,7 +45,7 @@ export default function Footer() {
                 </span>
                 <span>
                     <b>Phone</b> <br />
-                    <a href="tel:9846661461">+91 98466 61461</a>
+                    <a href="tel:8137097993">+91 81370 97993</a>
                 </span>
             </div>
 

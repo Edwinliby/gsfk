@@ -29,6 +29,11 @@
     justify-content: space-between;
 }
 
+.footer .navLinks .links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .footer .navLinks a {
     font-weight: 600;
     color: #000;
@@ -123,7 +128,7 @@
 
     .footer .navLinks a {
         font-size: .9rem;
-        padding: .9rem;
+        padding: .6rem;
     }
 
     .footer .title h1 span {
