@@ -104,6 +104,11 @@
         padding: 4rem 2rem 1rem;
     }
 
+    .currentEvent .amu {
+        text-align: left;
+        font-size: 1.15rem;
+    }
+
     .QAList {
         flex-direction: column;
         gap: 2rem;
