@@ -59,9 +59,12 @@ export default function Navbar({ handleFormClick }) {
                         <a href="#join" >
                             Partners
                         </a>
-                        {/* <a href="#team" >
-                            Team
-                        </a> */}
+                        <a href="#glance" >
+                            Glance
+                        </a>
+                        <a href="#features" >
+                            Features
+                        </a>
                         {/* <p className={styles.menuBuy} onClick={handleFormClick}>
                             <b>Buy Ticket</b>
                         </p> */}

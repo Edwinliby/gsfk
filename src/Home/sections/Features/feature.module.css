@@ -48,7 +48,7 @@
 }
 
 .feature .headerContent {
-    padding: 4rem;
+    padding: 3rem 4rem;
     background-image: linear-gradient(to right, rgb(9, 154, 190), rgb(0, 62, 119));
     position: relative;
 }
@@ -72,7 +72,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 4rem;
+    padding: 3rem 4rem;
 }
 
 .feature .expo1 .c2 {
@@ -95,7 +95,7 @@
 
 .feature .expo1 img {
     height: 100%;
-    width: 30rem;
+    width: 35rem;
 }
 
 .feature .expo2 {
@@ -104,7 +104,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 4rem 0rem;
+    padding: 3rem 0rem;
 }
 
 .feature .expo2 img {
@@ -150,7 +150,7 @@
 }
 
 .great .p2 {
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 
 .expo3 .headerContent .greatDudes {
@@ -162,23 +162,75 @@
     padding: 4rem;
 }
 
-.lastContent span {
+.lastContent ul {
     display: flex;
-    gap: 1rem;
     flex-wrap: wrap;
+    gap: 1.5rem;
     text-transform: uppercase;
+    position: relative;
 }
 
-.lastContent span h1 {
+.lastContent ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.lastContent ul li img {
+    width: 6rem;
+    object-fit: contain;
+}
+
+.lastContent ul li:nth-child(1) {
+    top: 0;
+}
+
+.lastContent ul li:nth-child(2) {
+    top: 2rem;
+}
+
+.lastContent ul li:nth-child(3) {
+    top: 6rem;
+}
+
+.lastContent ul li:nth-child(4) img {
+    width: 4rem;
+}
+
+.lastContent ul li:nth-child(4) {
+    top: 11rem;
+}
+
+.lastContent ul li:nth-child(5) {
+    top: 12rem;
+}
+
+.lastContent ul h1 {
     background-image: linear-gradient(to right, rgb(11, 144, 177), rgb(5, 110, 207));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     font-size: 2.5rem;
+    padding-top: 1rem;
 }
 
-.lastContent span h1:nth-child(odd) {
-    font-family: 'NeueMontreal-Bold';
+@media(width<=1440px) {
+    .feature {
+        background-position: 20% 20%;
+    }
+
+    .lastContent ul {
+        gap: 2rem;
+    }
+
+    .lastContent ul li {
+        gap: .8rem;
+    }
+
+    .lastContent ul h1 {
+        font-size: 1.9rem;
+    }
 }
 
 @media(width<=1024px) {
@@ -306,14 +358,18 @@
     }
 
     .great .p2 {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     .lastContent {
-        padding: 1rem;
+        padding: 0rem 1rem 1rem;
     }
 
-    .lastContent span h1 {
-        font-size: 2.2rem;
+    .lastContent ul {
+        padding-left: 1.2rem;
+    }
+
+    .lastContent ul h1 {
+        font-size: 1.3rem;
     }
 }

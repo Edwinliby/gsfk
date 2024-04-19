@@ -7,6 +7,11 @@ import darwin1 from '../../../assets/darwin1.webp'
 import evo1 from '../../../assets/evo1.webp'
 import human1 from '../../../assets/human1.webp'
 import sci from '../../../assets/sci.webp'
+import dino from '../../../assets/Dino.webp'
+import vr from '../../../assets/vr.webp'
+import vrgirl from '../../../assets/schoolgirl.webp'
+import aug from '../../../assets/aug.webp'
+import multi from '../../../assets/multi.webp'
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -40,7 +45,7 @@ export default function Features() {
             opacity: 0,
             y: 100,
         }, {
-            duration: 2,
+            duration: 1,
             opacity: 1,
             y: 0,
             ease: 'bounce',
@@ -152,7 +157,7 @@ export default function Features() {
 
 
     return (
-        <div className={styles.feature}>
+        <div id="features" className={styles.feature}>
             <span ref={tr1}></span>
             <div className={styles.header}>
                 <span className={styles.title}>
@@ -185,7 +190,6 @@ export default function Features() {
             <div className={styles.expo2}>
                 <img ref={img2} src={darwin1} alt="watchers" />
                 <div className={styles.content}>
-                    {/* <img src={darwin2} alt="watchers" /> */}
                     <h1>EVOLUTION</h1>
                     <p className={styles.p2}>
                         Evolution explains Charles Darwin's journey and findings in formulating the theory of Evolution by Natural selection.
@@ -208,15 +212,15 @@ export default function Features() {
             </div>
 
             <span ref={tr5}></span>
-            <div className={styles.expo1}>
+            <div className={`${styles.expo1} ${styles.timeTravel}`}>
                 <div className={styles.content}>
-                    <h1>Hominid Time Travel</h1>
+                    <h1>Time Travel</h1>
                     <p>
                         Reveals the anatomy and physiology of the Human
                         species through original exhibits and Audio visual presentations.
                     </p>
                 </div>
-                <img ref={img4} src={evo1} alt="evolution of monkey" />
+                <img className={styles.mon} ref={img4} src={evo1} alt="evolution of monkey" />
             </div>
 
             <span ref={tr6}></span>
@@ -235,23 +239,39 @@ export default function Features() {
             <div className={`${styles.expo3} ${styles.great}`}>
                 <img ref={img6} src={sci} alt="bone structure" />
                 <div className={styles.headerContent}>
+                    <h1 style={{ color: '#fff' }}>SCIENCE</h1>
                     <p className={styles.p2}>
-                        Demonstrating the <br />
-                        <b style={{ color: "#fff" }}>Philosophy of Science.</b>
+                        Demonstrating the
+                        <b style={{ color: "#fff" }}> Philosophy of Science</b>
                     </p>
                     <img ref={img6} className={styles.greatDudes} src={sci} alt="bone structure" />
                 </div>
             </div>
 
             <div className={styles.lastContent}>
-                <span>
-                    <h1>walk ins .</h1>
-                    <h1>simulated experiences .</h1>
-                    <h1>multimedia installations .</h1>
-                    <h1>augmented realities .</h1>
-                    <h1>virtual realities .</h1>
-                    <h1>life size replicas</h1>
-                </span>
+                <ul>
+                    <li>
+                        <img src={multi} alt="multi" />
+                        <h1>multimedia installations</h1>
+                    </li>
+                    <li>
+                        <img src={vr} alt="vr" />
+                        <h1>simulated experiences</h1>
+                    </li>
+                    <li>
+                        <img src={aug} alt="aug" />
+                        <h1>virtual realities</h1>
+                    </li>
+                    <li>
+                        <img src={vrgirl} alt="vrgirl" />
+                        <h1>augmented realities</h1>
+                    </li>
+
+                    <li>
+                        <img src={dino} alt="dino" />
+                        <h1>life size replicas</h1>
+                    </li>
+                </ul>
 
                 <br /><br />
 
@@ -259,7 +279,7 @@ export default function Features() {
                     Everyday Science The Expo provides the participation of
                     Citizen Science activities conducted outside the academic institutions.
                     A city-wide awareness of the sciences will be promoted by the placement
-                    of evocative <b>street / Beach installations</b>. Book Fair Books on subjects
+                    of evocative <b>Street / Beach installations</b>. Book Fair Books on subjects
                     like science, art, and the humanities will be displayed by prominent publishers.
                     Industrial Pavilions Prominent scientific and technological organisations
                     are invited to present the advances made in their fields and to promote their

@@ -36,7 +36,7 @@ export default function CollabSection() {
             </div>
 
             <div className={styles.partners}>
-                <h1>Team <b style={{ fontFamily: 'NeueMontreal-Bold' }}>AMUSEUM</b></h1>
+                <h1><b style={{ fontFamily: 'NeueMontreal-Bold' }}>AMUSEUM</b></h1>
                 <p>
                     Amuseum ArtScience is a registered non-profit trust comprising independent intellectuals,
                     artists, scientists, and cultural enthusiasts. Its objective is to create a knowledge

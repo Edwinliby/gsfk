@@ -101,6 +101,8 @@
 .navbar.scrolled .linkBlocks a {
     color: #000;
     font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar.scrolled .linkBlocks {
@@ -119,7 +121,7 @@
     padding: .8rem 1rem;
     border-radius: .5rem;
     transition: all .3s ease-in-out
-} 
+}
 
 .navbar.scrolled .buy {
     background-image: linear-gradient(to right, rgb(0, 143, 179), rgba(0, 132, 255, 0.6));
@@ -128,6 +130,10 @@
 
 .navbar .buy:hover {
     scale: 1.1;
+}
+
+.navbar.scrolled .linkBlocks a:hover {
+    color: rgb(0, 204, 255);
 }
 
 @media (width<=768px) {

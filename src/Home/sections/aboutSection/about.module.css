@@ -1,17 +1,11 @@
 .currentEvent {
     position: relative;
-    padding: 4rem;
     display: flex;
     flex-direction: column;
 }
 
-.currentEvent .c1 {
-    position: absolute;
-    right: 1rem;
-    top: 0;
-    z-index: -1;
-    width: 30rem;
-    opacity: .9;
+.currentEvent .content {
+    padding: 4rem;
 }
 
 .currentEvent ul {
@@ -23,6 +17,25 @@
     letter-spacing: 1px;
     font-size: 1.3rem;
     padding: .5rem;
+}
+
+.glance {
+    z-index: -1;
+    padding: 4rem;
+    background-image: linear-gradient(to right, rgb(9, 154, 190), rgb(0, 62, 119));
+    position: relative;
+}
+
+.glance h2 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.glance img {
+    position: absolute;
+    bottom: 0;
+    right: 5rem;
+    width: 25rem;
 }
 
 .QAList {
@@ -50,8 +63,18 @@
     gap: 3rem;
 }
 
-.QAList .questions a {
+.QAList .questions .bookNow {
+    margin-top: 1rem;
+    border-radius: .5rem;
+    width: fit-content;
     font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem .8rem;
+    background-image: linear-gradient(to right, rgba(30, 146, 175, 0.8), rgb(10, 108, 212));
 }
 
 .starContainer {
@@ -79,6 +102,25 @@
     height: 40rem;
 }
 
+@media(width<=1440px) {
+    .starContainer {
+        right: 2rem;
+    }
+
+    .starContainer .star {
+        height: 34rem;
+    }
+
+    .glance {
+        padding: 3rem;
+    }
+
+    .glance img {
+        right: 7em;
+        width: 17rem;
+    }
+}
+
 @media(width<=1280px) {
     .starContainer {
         right: 0rem;
@@ -100,7 +142,7 @@
 }
 
 @media(width<=768px) {
-    .currentEvent {
+    .currentEvent .content {
         padding: 4rem 2rem 1rem;
     }
 
@@ -115,7 +157,6 @@
         padding-top: 0rem;
     }
 
-
     .starContainer h4 {
         left: 0rem;
     }
@@ -123,16 +164,39 @@
     .starContainer .star {
         height: 20rem;
     }
+
+    .glance {
+        padding: 2rem;
+    }
+
+    .glance img {
+        right: 5em;
+        width: 13.5rem;
+    }
 }
 
 @media(width<=600px) {
-    .currentEvent {
-        padding: 3rem 1rem 0rem;
+    .currentEvent .content {
+        padding: 0rem 1rem 0rem;
     }
 
     .starContainer h4 {
         left: 1rem;
         font-size: .8rem;
+    }
+
+    .glance {
+        margin: 1.5rem 0 2rem;
+        padding: 1.5rem;
+    }
+
+    .glance h2 {
+        font-size: 2.5rem;
+    }
+
+    .glance img {
+        right: 0em;
+        width: 10.5rem;
     }
 }
 

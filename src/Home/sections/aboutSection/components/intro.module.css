@@ -55,8 +55,8 @@
 
 .aboutSection .vr {
     position: absolute;
-    top: 10rem;
-    left: 22rem;
+    top: 8rem;
+    left: 20rem;
     width: 12rem;
 }
 
@@ -64,14 +64,14 @@
     position: absolute;
     bottom: 3rem;
     left: 8rem;
-    width: 14rem;
+    width: 16rem;
 }
 
 .aboutSection .earth {
     position: absolute;
     top: -10rem;
     right: -7rem;
-    width: 50rem;
+    width: 46rem;
 }
 
 @media(width<=1290px) {
