@@ -60,7 +60,7 @@ export default function Navbar({ handleFormClick }) {
                             Partners
                         </a>
                         <a href="#glance" >
-                            Glance
+                            At a Glance
                         </a>
                         <a href="#features" >
                             Features
