@@ -60,7 +60,7 @@
 }
 
 .navbar .logoo {
-    width: 9rem;
+    width: 13rem;
 }
 
 .navbar .blueLogo {
@@ -176,7 +176,7 @@
 
     .navbar .logo {
         display: block;
-        width: 8rem;
+        width: 10rem;
         transition: all 0.3s ease-in-out;
     }
 
@@ -189,7 +189,7 @@
     }
 
     .navbar.scrolled .logo {
-        width: 7rem;
+        width: 9rem;
     }
 
     .navbar .links .linkBlocks {
@@ -247,11 +247,11 @@
     }
 
     .navbar .logo {
-        width: 7rem;
+        width: 9rem;
     }
 
     .navbar.scrolled .logo {
-        width: 6rem;
+        width: 8rem;
     }
 
     .links {
