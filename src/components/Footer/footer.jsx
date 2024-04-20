@@ -21,14 +21,14 @@ export default function Footer() {
                 <div className={styles.links}>
                     <a href="/">Home</a>
                     <a href="#about">About</a>
-                    <a href="#glance">Glance</a> 
-                    <a href="#features">Features</a> 
+                    <a href="#glance">Glance</a>
+                    <a href="#features">Features</a>
                     <a href="#join">Partners</a>
                 </div>
                 <div className={styles.social}>
-                    <a href="/"><FaFacebook size={25} /></a>
-                    <a href="/"><FaInstagram size={25} /></a>
-                    <a href="/"><FaXTwitter size={25} /></a>
+                    {/* <a href="/"><FaFacebook size={25} /></a> */}
+                    <a href="https://www.instagram.com/sciencexpo.kozhikode" target='_blank'><FaInstagram size={25} /></a>
+                    {/* <a href="/"><FaXTwitter size={25} /></a> */}
                 </div>
             </div>
 
