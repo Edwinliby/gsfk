@@ -100,6 +100,7 @@
 
 .starContainer .star {
     height: 40rem;
+    mix-blend-mode: multiply;
 }
 
 @media(width<=1440px) {
