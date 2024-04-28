@@ -9,6 +9,8 @@ import Navbar from '../components/Navbar/navbar'
 import Form from "../components/Form/form";
 import Bait from '../components/Bait/bait'
 
+import { Analytics } from "@vercel/analytics/react"
+
 import { useEffect, useState } from 'react'
 
 function App() {
@@ -30,6 +32,7 @@ function App() {
         <div>
             {/* {loading ? <Loader /> : ( */}
             <div>
+                <Analytics />
                 <Bait handleFormClick={handleFormClick} />
                 <Navbar handleFormClick={handleFormClick} />
                 <HeroSection handleFormClick={handleFormClick} />
