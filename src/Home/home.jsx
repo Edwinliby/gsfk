@@ -33,7 +33,7 @@ function App() {
             {/* {loading ? <Loader /> : ( */}
             <div>
                 <Analytics />
-                <Bait handleFormClick={handleFormClick} />
+                {/* <Bait handleFormClick={handleFormClick} /> */}
                 <Navbar handleFormClick={handleFormClick} />
                 <HeroSection handleFormClick={handleFormClick} />
                 <AboutSection handleFormClick={handleFormClick} />

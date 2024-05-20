@@ -68,16 +68,16 @@ export default function Navbar({ handleFormClick }) {
                         {/* <p className={styles.menuBuy} onClick={handleFormClick}>
                             <b>Buy Ticket</b>
                         </p> */}
-                        <a href="https://makemypass.com/kozhikodexpo" className={styles.menuBuy}>
-                            Buy Ticket
+                        <a href="#" className={styles.menuBuy}>
+                            Tickets Closed
                         </a>
                     </div>
 
                     {/* <p className={styles.buy} onClick={handleFormClick}>
                         <b>Buy Ticket</b>
                     </p> */}
-                    <a href="https://makemypass.com/kozhikodexpo" className={styles.buy}>
-                        Buy Ticket
+                    <a href="#" className={styles.buy}>
+                        Tickets Closed
                     </a>
                 </div>
             </div>

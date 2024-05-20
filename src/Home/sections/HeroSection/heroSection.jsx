@@ -29,15 +29,17 @@ export default function heroSection() {
             <div className={styles.content}>
                 <span className={styles.titleClick}>
                     <img className={styles.heroTitle} src={Title} alt="" />
-                    <a href="https://makemypass.com/kozhikodexpo">Buy Ticket</a>
+                    <a href="#">Tickets Closed</a>
+
+                    <p style={{ color: "#fff", fontSize: "1.1rem" }}>***The event has been concluded</p>
                 </span>
                 <div className={styles.date_time}>
-                    <div className={styles.location}>
+                    {/* <div className={styles.location}>
                         <Countdown
                             date={new Date("2024-05-10T00:00:00")}
                             renderer={renderer}
                         />
-                    </div>
+                    </div> */}
                     <div className={styles.location}>
                         <div className={styles.date}>
                             <p>10<span className={styles.TH}>TH</span></p>

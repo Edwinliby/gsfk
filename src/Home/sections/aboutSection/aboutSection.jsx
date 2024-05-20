@@ -128,8 +128,8 @@ export default function Navbar() {
                                 <p>Admission of the visitors will be regulated through tickets.</p>
                                 <a
                                     className={styles.bookNow}
-                                    href='https://makemypass.com/kozhikodexpo'>
-                                    <b style={{ color: "#fff" }}>Click here to book your tickets <FiExternalLink /></b>
+                                    href='#'>
+                                    <b style={{ color: "#fff" }}>Tickets Closed <FiExternalLink /></b>
                                 </a>
                             </span>
                         </div>
