@@ -43,10 +43,10 @@ export default function Footer() {
                     <a href="mailto:scienceexpokozhikode@gmail.com">scienceexpokozhikode@gmail.com</a> <br />
                     {/* <a href="mailto:partnerships@gsfk.org">partnerships@gsfk.org</a> */}
                 </span>
-                <span>
+                {/* <span>
                     <b>Phone</b> <br />
                     <a href="tel:8137097993">+91 81370 97993</a>
-                </span>
+                </span> */}
             </div>
 
             <p style={{ fontSize: ".8rem", paddingLeft: "1rem" }}>Amuseum Copyright ©️2024 </p>
